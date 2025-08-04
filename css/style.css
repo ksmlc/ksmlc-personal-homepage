@@ -1,0 +1,1237 @@
+/*@font-face {*/
+/*    font-family: 'KeepStyle'; !* 指定字体名称 *!*/
+/*    src: url('../font/KeepStyle.ttf') format('truetype'); !* 字体文件路径和格式 *!*/
+/*    font-weight: normal; !* 字体的粗细 *!*/
+/*    font-style: normal; !* 字体的样式 *!*/
+/*}*/
+
+* {
+    font-family: 'Bahnschrift', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    transition: all 0.1s ease;
+    /*禁止拖拽*/
+    -webkit-user-drag: none; /* 对 Safari 和 Chrome 生效 */
+    user-drag: none; /* 对其他浏览器生效 */
+}
+img{
+    pointer-events: none; /* 禁用鼠标事件 */
+}
+
+a:hover,
+a:link,
+a:visited,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: inherit;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 将变量声明移到 :root 伪类下以确保在整个文档中可用 */
+body.dark-theme {
+    --main-bg-color: var(--main-bg-color-dark);
+    --main-text-color: var(--main-text-color-dark);
+    --gradient-start: var(--gradient-start-dark);
+    --gradient-middle: var(--gradient-middle-dark);
+    --gradient-end: var(--gradient-end-dark);
+    --purple-text-color: var(--purple-text-color-dark);
+    --text-bg-color: var(--text-bg-color-dark);
+    --icon-bg-color: var(--icon-bg-color-dark);
+    /*联系方式css开始*/
+    --icon-wx-hover-color: var(--icon-wx-hover-color-dark);
+    --icon-qq-hover-color: var(--icon-qq-hover-color-dark);
+    --icon-github-hover-color: var(--icon-github-hover-color-dark);
+    --icon-mail-hover-color: var(--icon-mail-hover-color-dark);
+    --icon-b-hover-color: var(--icon-b-hover-color-dark);
+    --icon-gitee-hover-color: var(--icon-gitee-hover-color-dark);
+    --icon-抖音-hover-color: var(--icon-抖音-hover-color-dark);
+    --icon-Telegram-hover-color: var(--icon-Telegram-hover-color-dark);
+    /*联系方式css结束*/
+    --project-item-bg-color: var(--project-item-bg-color-dark);
+    --project-item-hover-color: var(--project-item-hover-color-dark);
+    --project-item-left-title-color: var(--project-item-left-title-color-dark);
+    --project-item-left-text-color: var(--project-item-left-text-color-dark);
+    --footer-text-color: var(--footer-text-color-dark);
+    --footer-text-bg-color: var(--footer-text-bg-color-dark);
+    --card_identity_span_color: var(--card_identity_span_color-dark); /*地区块字体颜色*/
+    --card_skill_circle_bg_color:var(--card_skill_circle_bg_color-dark); /*技能字体圆背景颜色*/
+    --music-text-color: var(--music-text-color-dark);/*音乐字体颜色*/
+}
+
+body.blue-theme {
+    --main-bg-color: var(--main-bg-color-blue);
+    --main-text-color: var(--main-text-color-blue);
+    --gradient-start: var(--gradient-start-blue);
+    --gradient-middle: var(--gradient-middle-blue);
+    --gradient-end: var(--gradient-end-blue);
+    --purple-text-color: var(--purple-text-color-blue);
+    --text-bg-color: var(--text-bg-color-blue);
+    --icon-bg-color: var(--icon-bg-color-blue);
+    /*联系方式css开始*/
+    --icon-wx-hover-color: var(--icon-wx-hover-color-blue);
+    --icon-qq-hover-color: var(--icon-qq-hover-color-blue);
+    --icon-github-hover-color: var(--icon-github-hover-color-blue);
+    --icon-mail-hover-color: var(--icon-mail-hover-color-blue);
+    --icon-b-hover-color: var(--icon-b-hover-color-blue);
+    --icon-gitee-hover-color: var(--icon-gitee-hover-color-blue);
+    --icon-抖音-hover-color: var(--icon-抖音-hover-color-blue);
+    --icon-Telegram-hover-color: var(--icon-Telegram-hover-color-blue);
+    /*联系方式css结束*/
+    --project-item-bg-color: var(--project-item-bg-color-blue);
+    --project-item-hover-color: var(--project-item-hover-color-blue);
+    --project-item-left-title-color: var(--project-item-left-title-color-blue);
+    --project-item-left-text-color: var(--project-item-left-text-color-blue);
+    --footer-text-bg-color: var(--footer-text-bg-color-blue);
+    --card_identity_span_color: var(--card_identity_span_color-blue); /*地区块字体颜色*/
+    --card_skill_circle_bg_color:var(--card_skill_circle_bg_color-blue); /*技能字体圆背景颜色*/
+    --music-text-color: var(--music-text-color-blue);/*音乐字体颜色*/
+}
+
+
+:root {
+    --main-bg-color-dark: linear-gradient(125deg, #2A3A4F, #364B61, #53758C, #85B2C4);
+    /*--main-bg-color-dark: url('../images/svg/bg-dark.svg') ;*/
+    --main-text-color-dark: #d9d6d6;
+    --gradient-start-dark: rgb(133, 62, 255);
+    --gradient-middle-dark: #f76cc6 30%;
+    --gradient-end-dark: rgb(255, 255, 255) 60%;
+    --purple-text-color-dark: #9567fb;
+    --text-bg-color-dark: rgb(26, 4, 48);
+    --icon-bg-color-dark: rgba(249, 250, 251, 0.6);
+    /*联系方式css开始*/
+    --icon-wx-hover-color-dark: rgb(55, 178, 114);
+    --icon-qq-hover-color-dark: rgb(201, 13, 0);
+    --icon-github-hover-color-dark: rgb(68, 120, 241);
+    --icon-mail-hover-color-dark: rgb(255, 193, 14);
+    --icon-b-hover-color-dark: rgb(255, 88, 142);
+    --icon-gitee-hover-color-dark: #c71d23;
+    --icon-抖音-hover-color-dark: #FE7BA4;
+    --icon-Telegram-hover-color-dark: #1086C2;
+    /*联系方式css结束*/
+    --project-item-bg-color-dark: rgb( 27, 29, 31);
+    --project-item-hover-color-dark: rgb(19, 23, 27);
+    --project-item-left-title-color-dark: rgb(255, 255, 255);
+    --project-item-left-text-color-dark: rgb(142, 142, 142);
+    --footer-text-color-dark: #646464;
+    --footer-text-bg-color-dark: rgba( 27, 29, 31);
+    --card_identity_span_color-dark: #fff; /*地区块字体颜色*/
+    --card_skill_circle_bg_color-dark: #1F2025; /*技能字体圆背景颜色*/
+    --music-text-color-dark:#fff;
+}
+
+:root {
+    --main-bg-color-blue: linear-gradient(125deg, #B5BDF7, #D0B8E6, #E8D2C7, #C5E3B6);
+    /*--main-bg-color-blue: url('../images/svg/bg-blue.svg') ;*/
+    --main-text-color-blue: #ffffff;
+    --gradient-start-blue: #607df1;
+    --gradient-middle-blue: #e0321b;
+    --gradient-end-blue: #000000;
+    --purple-text-color-blue: #0934e0;
+    --text-bg-color-blue: #f4f4f4;
+    --icon-bg-color-blue: rgba(249, 250, 251, 0.6);
+    /*联系方式css开始*/
+    --icon-wx-hover-color-blue: rgb(55, 178, 114);
+    --icon-qq-hover-color-blue: rgb(201, 13, 0);
+    --icon-github-hover-color-blue: rgb(68, 120, 241);
+    --icon-mail-hover-color-blue: rgb(255, 193, 14);
+    --icon-b-hover-color-blue: rgb(255, 88, 142);
+    --icon-gitee-hover-color-blue: #c71d23;
+    --icon-抖音-hover-color-blue: #FE7BA4;
+    --icon-Telegram-hover-color-blue: #1086C2;
+    /*联系方式css结束*/
+    --project-item-bg-color-blue: rgba(249, 250, 251, 0.6);  /*透明背景*/
+    --project-item-hover-color-blue: rgba(240, 241, 241, 0.6);
+    --project-item-left-title-color-blue: #000000;
+    --project-item-left-text-color-blue: #5d5757;
+    --footer-text-bg-color-blue: rgba(187, 181, 181, 0.28);
+    --card_identity_span_color-blue: #000 ;/*地区块字体颜色*/
+    --card_skill_circle_bg_color-blue: #fff; /*技能字体圆背景颜色*/
+    --music-text-color-blue:#000;
+}
+
+body {
+    justify-content: center;
+    color: var(--main-text-color);
+    background-image: var(--main-bg-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* 添加一个自定义的滚动条样式，这是可选的 */
+body::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #89b8e7;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.main {
+    width: 100%;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: auto 1fr; /* 第一个列宽度自适应，第二个列占据剩余空间 */
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 0 auto; /* 将元素水平居中 */
+}
+/*将左边块固定住，不让他跟随鼠标上下滑动，如果左边内容过长将这块注释掉-开始*/
+.main-left {
+    position: fixed; /* 固定左边块的位置 */
+    overflow-y: auto; /* 当内容溢出时显示垂直滚动条 */
+}
+
+.main-right {
+    margin-left: 250px; /* 让右边块的内容不被左边块遮挡 */
+}
+/*将左边块固定住，不让他跟随鼠标上下滑动，如果左边内容过长将这块注释掉-结束*/
+@media (min-width: 1100px) {
+    header>div>img{
+        display: none;
+    }
+}
+
+.welcome {
+    font-family: sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    margin:20px 0;
+}
+/*让div一排*/
+.welcome div {
+    display: inline-block;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.gradientText {
+    color: var(--purple-text-color);
+}
+
+.purpleText {
+    color: var(--purple-text-color);
+    font-weight: 800;
+    position: relative;
+    padding: 0 5px;
+}
+
+.purpleText::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.purpleText:hover::after {
+    transform: scaleX(1);
+}
+
+.textBackground {
+    font-weight: 500;
+    background: var(--text-bg-color);
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 2px;
+}
+
+.iconContainer {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.iconItem {
+    height: 38px;
+    padding: 0 12px;
+    position: relative;
+    background: var(--icon-bg-color) !important;
+    border-radius: 6px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: all 0.6s ease;
+}
+
+.iconItem .tooltip {
+    visibility: hidden; /* 初始状态下，隐藏提示文本 */
+    width: 100%; /* 提示文本的宽度 */
+    background-color: var(--project-item-bg-color); /* 提示文本的背景颜色 */
+    color: var(--purple-text-color); /* 提示文本的文字颜色 */
+    text-align: center; /* 提示文本的文字居中 */
+    border-radius: 5px; /* 提示文本的圆角 */
+    padding: 5px 5px; /* 提示文本的内边距 */
+    position: absolute; /* 绝对定位提示文本 */
+    left: 50%; /* 提示文本的左边缘与图标的中点对齐 */
+    margin-left: -50%; /* 提示文本的水平偏移量，使其水平居中（宽度的一半） */
+    opacity: 0; /* 初始状态下，提示文本完全透明 */
+    transition: opacity 0.5s ease, bottom 0.5s ease; /* 设置透明度和垂直位置变化的过渡动画，时长0.5秒，平滑过渡 */
+    z-index: 1; /* 设置z-index，使提示文本在其他元素之上 */
+    font-weight: bold;
+}
+
+.iconItem:hover .tooltip {
+    visibility: visible; /* 鼠标悬停时，显示提示文本 */
+    bottom: 110%; /* 提示文本的位置稍微上移至距离图标底部150%的位置 */
+    opacity: 1; /* 鼠标悬停时，提示文本完全不透明 */
+}
+
+.iconItem{
+    font-size: 10px;
+}
+.iconItem:hover {
+    transform: translateY(-3px);
+    background: var(--icon-wx-hover-color) !important;
+}
+
+.iconItem:nth-child(2):hover {
+    transform: translateY(-3px);
+    background: var(--icon-qq-hover-color) !important;
+}
+
+.iconItem:nth-child(3):hover {
+    transform: translateY(-3px);
+    background: var(--icon-github-hover-color) !important;
+}
+
+.iconItem:nth-child(4):hover {
+    transform: translateY(-3px);
+    background: var(--icon-mail-hover-color) !important;
+}
+
+.iconItem:nth-child(5):hover {
+    transform: translateY(-3px);
+    background: var(--icon-b-hover-color) !important;
+}
+.iconItem:nth-child(6):hover {
+    transform: translateY(-3px);
+    background: var(--icon-gitee-hover-color) !important;
+}
+.iconItem:nth-child(7):hover {
+    transform: translateY(-3px);
+    background: var(--icon-抖音-hover-color) !important;
+}
+.iconItem:nth-child(8):hover {
+    transform: translateY(-3px);
+    background: var(--icon-Telegram-hover-color) !important;
+}
+
+.music_and_time {
+    width: 100%;
+    height: 217px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*音乐开始*/
+.music-player {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.music-player img {
+    width: 150px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.music-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.music-info h3,
+.music-info p {
+    margin: 5px 0;
+}
+
+.progress-container {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.progress {
+    width: 100%; /* 固定进度条长度 */
+    height: 10px;
+    background: #4caf50;
+    border-radius: 5px;
+}
+
+.time-display {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.lyrics-line-container {
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.lyrics-line {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.controls button {
+    padding: 5px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 0 5px;
+    width: 100%;
+    /* 新增：让按钮内的图标居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls > button > img {
+    /* 限制图标大小 */
+    max-width: 17px;
+    max-height: 17px;
+    margin-right: 0;
+}
+#music-title,#music-artist,.time-display,.lyrics-line,.chart-modal-content > h2{
+    color: var(--music-text-color);
+}
+@media (max-width: 580px) {
+    .music-player img {
+        width: 80px !important;
+    }
+    .lyrics-line {
+        width: 150px !important;}
+}
+/* 模态框整体样式 */
+.chart-modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* 背景遮罩更暗 */
+    backdrop-filter: blur(5px); /* 背景模糊效果 */
+}
+
+/* 模态框内容区域 */
+.chart-modal-content {
+    background-color: var(--card_skill_circle_bg_color);
+    margin: 10% auto;
+    padding: 25px;
+    border: none;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease; /* 添加淡入动画 */
+}
+
+/* 关闭按钮样式 */
+.chart-modal-content .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.chart-modal-content .close:hover {
+    color: #fff; /* 悬停时变为白色 */
+}
+
+/* 标题样式 */
+.chart-modal-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--music-text-color);
+    text-align: center;
+}
+
+/* 歌单按钮容器 */
+#playlist-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 按钮之间的间距 */
+}
+
+/* 歌单按钮样式 */
+.chart-btn {
+    padding: 12px;
+    margin: 0;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chart-btn:hover {
+    background-color: #45a049; /* 悬停时颜色加深 */
+    transform: translateY(-2px); /* 悬停时轻微上移 */
+}
+
+/* 歌曲列表样式 */
+#songs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#songs-list li {
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #4caf50;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#songs-list li:hover {
+    background-color: #45a049; /* 悬停时颜色加深 */
+    transform: translateY(-2px); /* 悬停时轻微上移 */
+}
+
+/* 淡入动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*音乐结束*/
+
+.title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px 0;
+    transition: all 0.4s ease;
+}
+.title>img{
+    border-radius: 5px;
+    background-color: var(--icon-bg-color);
+}
+
+.title:hover {
+    transform: translateY(-4px);
+    transition: transform 0.4s; /* 过渡效果，让动画更平滑 */
+}
+.gradientText:hover{
+    transform: translateY(-5px);
+    transition: transform 0.4s; /* 过渡效果，让动画更平滑 */
+}
+.description:hover {
+    transform: translateY(-1px);
+    transition: transform 0.4s; /* 过渡效果，让动画更平滑 */
+}
+
+.Title_Hidden{
+    display: none;
+}
+
+/* ====== 项目列表容器 ====== */
+.projectList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px;
+    perspective: 1000px;
+}
+
+/* ====== 单个项目项 ====== */
+.projectItem {
+    opacity: 0;
+    transform: translateY(50px) rotateX(15deg);
+    display: flex;
+    background-color: var(--project-item-bg-color);
+    border-radius: 8px;
+    padding: 18px;
+    height: 110px;
+    width: calc(25% - 30px);
+    transition:
+            transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+            background-color 0.4s ease,
+            opacity 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+/* ====== 响应式适配 ====== */
+@media (max-width: 1250px) {
+    .projectItem {
+        width: calc(50% - 30px) !important;
+    }
+    .projectItemRight img {
+        height: 44px !important;
+        width: 44px !important;
+    }
+}
+@media (max-width: 580px) {
+    .projectItem {
+        width: 100% !important;
+    }
+}
+
+/* ====== 修复文字遮盖问题 ====== */
+.projectItem::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 100%,
+    rgba(255,255,255,0.12) 0%,
+    transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+/* ====== 入场动画 ====== */
+.projectItem.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+    animation: itemAppear 0.8s ease-out forwards;
+}
+
+@keyframes itemAppear {
+    0% { filter: blur(8px); }
+    100% { filter: blur(0); }
+}
+
+/* ====== 新版悬停动效 ====== */
+.projectItem:hover {
+    transform:
+            translateY(-6px)
+            scale(1.03)
+            rotateX(8deg)
+            rotateZ(1deg);  /* 新增Z轴旋转 */
+    background-color: var(--project-item-hover-color);
+    opacity: 1 !important;
+    box-shadow:
+            0 12px 24px rgba(0,0,0,0.15),
+            inset 0 2px 4px rgba(255,255,255,0.1); /* 新增内阴影 */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1.5); /* 弹性曲线 */
+}
+
+/* ====== 左侧内容区优化 ====== */
+.projectItemLeft {
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+    width: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+.projectItemLeft h2 {
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--project-item-left-title-color);
+    transition:
+            text-shadow 0.3s ease,
+            transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.projectItemLeft p {
+    font-size: 15px;
+    margin-top: 8px;
+    color: var(--project-item-left-text-color);
+    opacity: 0.9;
+    line-height: 1.4;
+    position: relative;
+}
+
+.projectItemLeft p::before {
+    transition: transform 0.3s ease;
+}
+
+.projectItem:hover .projectItemLeft p::before {
+    filter: brightness(1.2);
+}
+
+/* ====== 右侧图片区 ====== */
+.projectItemRight {
+    transition:
+            transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+            filter 0.3s ease;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.projectItemRight img {
+    height: 35px;
+    width: 35px;
+    transition:
+            transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+            filter 0.3s ease;
+    filter:
+            drop-shadow(0 2px 4px rgba(0,0,0,0.1))
+            brightness(0.95);
+}
+
+/* ====== 图片悬停动效 ====== */
+.projectItem:hover .projectItemRight {
+    transform: translateX(15%); /* 增加滑动距离 */
+}
+
+.projectItem:hover .projectItemRight img {
+    transform:
+            scale(1.4)  /* 增加放大比例 */
+            rotate(20deg);  /* 增加旋转角度 */
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+/* ====== 文字悬停动效 ====== */
+.projectItem:hover .projectItemLeft h2 {
+    text-shadow: 0 2px 12px rgba(0,0,0,0.25); /* 增强阴影 */
+    transform: translateX(8px); /* 增加位移距离 */
+}
+.skill {
+    padding: 18px;
+    width: 100%;
+}
+
+.skill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skill #skillWap {
+    display: none;
+}
+
+footer {
+    padding: 5px;
+    background-color: var(--project-item-bg-color);
+    color: var(--card_identity_span_color);
+    border-radius: 5px;
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 580px) {
+    /*项目列表*/
+    /*这里是手机项目显示的宽度（一行一个）*/
+    .projectItemLeft {
+        width: 100%;
+    }
+    .welcome {
+        font-size: 38px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .projectItemLeft p {
+        font-size: 14px;
+    }
+
+    .projectItemLeft h2 {
+
+        font-size: 15px;
+    }
+
+    .projectItem:hover h1 {
+
+        font-size: 20px;
+
+    }
+    .projectList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill #skillWap {
+        display: block;
+    }
+
+    .skill #skillPc {
+        display: none;
+    }
+    #music{
+        display: none;
+    }
+    .music_and_time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .music_div{
+        width: 100%;
+        height: 20%;
+    }
+}
+
+/*切换主题*/
+.onoffswitch {
+    position: relative;
+    width: 38px;
+    height: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.onoffswitch-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    height: 100%;
+    margin-left: -100%;
+    transition: margin 0.2s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    font-size: 12px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "";
+    background-color: #e4e4e4;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.onoffswitch-inner:after {
+    content: "";
+    background-color: #272727;
+    color: #FAFAFA;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    height: 70%;
+    aspect-ratio: 1/1;
+    background: #FFFFFF;
+    position: absolute;
+    top: 12.5%;
+    bottom: 12.5%;
+    right: 5px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s; /* Webkit 前缀 */
+}
+
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 50%;
+}
+
+/* 初始隐藏翻译个人的样式 */
+.translated-description {
+    display: none;
+}
+
+
+/*中间块*/
+.music_div {
+    /* 相对定位 */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    background-color: var(--project-item-bg-color);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Left_block .Left_block_list>div div{
+    background-color: var(--project-item-bg-color);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Left_block .Left_block_list>div .circle {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin: 10px 1px 1px 5px;
+    background-color: var(--card_skill_circle_bg_color) !important;
+}
+
+.Left_block .Left_block_list>div .circle span {
+    display: inline-block;
+}
+
+/* 友情链接 */
+.friend_image-container {
+    position: relative;
+    display: inline-block;
+    margin: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+
+.friend_image-container.load-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.friend_image-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.friend_image-container .friend_image {
+    display: block;
+    border-radius: 10px;
+    margin: 5px;
+    width: 45px;
+    transition: transform 0.3s ease;
+}
+
+.friend_image-container:hover .friend_image {
+    transform: scale(1.05);
+}
+
+.friend_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 8px;
+    backdrop-filter: blur(2px);
+    transform: translateY(100%);
+    pointer-events: none; /* 防止悬停区域冲突 */
+}
+
+.friend_image-container:hover .friend_overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 580px) {
+    .friend_image {
+        width: 40px !important;
+        margin: 2px !important;
+    }
+
+    .friend_image-container {
+        margin: 2px;
+    }
+    .friend_overlay {
+        padding: 2px;
+        font-size: 14px;
+    }
+}
+
+.friend_image-container a {
+    display: block;
+    text-decoration: none;
+}
+
+.friend_image-container a:hover {
+    color: inherit;
+}
+
+/* 加载动画样式 */
+#loading {
+    /* 默认显示加载动画 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    backdrop-filter: blur(15px);
+}
+
+.loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 900;
+    color: #82c749;
+    letter-spacing: 0.2em;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #82c749;
+    position: absolute;
+    animation: load .5s infinite alternate ease-in-out;
+}
+
+.loader::before {
+    top: 0
+}
+
+.loader::after {
+    bottom: 0
+}
+
+@keyframes load {
+    0% {
+        left: 0;
+        height: 30px;
+        width: 15px
+    }
+
+    50% {
+        height: 8px;
+        width: 40px
+    }
+
+    100% {
+        left: 235px;
+        height: 30px;
+        width: 15px
+    }
+}
+
+/*右上角天气背景*/
+#tp-weather-widget{
+    border-radius: 5px;
+    padding: 5px 5px;
+    background-color: var(--icon-bg-color) !important;
+}
+
+/*左边块*/
+@media (max-width: 1100px) {
+    .main-left {
+        display: none;
+        position: static; /*将左边块固定住，不让他跟随鼠标上下滑动，如果左边内容过长将这块注释掉*/
+    }
+    /*将左边块固定住，不让他跟随鼠标上下滑动，如果左边内容过长将这块注释掉-开始*/
+    .main-right {
+        margin-left: 0px !important;
+    }
+    /*将左边块固定住，不让他跟随鼠标上下滑动，如果左边内容过长将这块注释掉-结束*/
+}
+
+.Left_block {
+    background-color: var(--project-item-bg-color);
+    width: 230px; /* 固定宽度 */
+    border-radius: 10px; /* 圆角 */
+    padding: 10px; /* 内边距 */
+    margin: 10px;
+    overflow-y: auto; /* 启用垂直滚动 */
+}
+
+.Left_block_list {
+    /*max-height: 185px; !* 设置最大高度 *!*/
+    max-height: 225px; /* 设置最大高度 */
+    overflow-y: auto; /* 启用垂直滚动 */
+}
+
+.circle:hover {
+    background: linear-gradient(to bottom left, #9875e8, #9875e8)!important;
+}
+.circle:hover span{
+    color: white;
+}
+
+/* 隐藏垂直滚动条 */
+.Left_block_list::-webkit-scrollbar {
+    display: none;
+}
+
+.Left_block div span{
+    color: var(--card_identity_span_color);
+    font-size: 14px;
+}
+.Left_block>p{
+    text-align: center;
+    color: var(--card_identity_span_color);
+    font-weight: bold;
+}
+/*fps*/
+#fps {
+    z-index: 10000;
+    position: fixed;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    color: #000;
+    background-color: var(--icon-bg-color);
+}
+
+/*弹窗添加滚动条*/
+.swal-text {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+/* 弹窗图片框 */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: var(--project-item-bg-color-blue);
+    border-radius: 10px;
+    padding: 10px; /* 增加内边距 */
+    margin: 10px;
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* 确保内边距包含在总宽高内 */
+}
+@media (max-width: 580px) {
+    .popup-content{
+        height: 60% !important;
+    }
+}
+.popup-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 40px;
+    color: var(--purple-text-color);
+}
+@media (max-width: 580px) {
+    .close {font-size: 25px;}
+}

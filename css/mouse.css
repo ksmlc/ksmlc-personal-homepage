@@ -1,0 +1,48 @@
+body {
+    cursor: url(../images/arrow.cur) 5 5,progress;
+}
+
+a:hover {
+    cursor: url(../images/hand.cur) 5 5,progress;
+}
+@media (max-width: 580px) {
+    #cursor{
+        display: none;
+    }
+}
+#cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background: #000000;
+    border-radius: 8px;
+    opacity: 0.25;
+    z-index: 999999;
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+    transition-property: background, opacity, transform;
+}
+
+#cursor.hidden {
+    opacity: 0;
+}
+
+#cursor.hover {
+    opacity: 0.1;
+    transform: scale(2.5);
+}
+
+#cursor.active {
+    opacity: 0.5;
+    transform: scale(0.5);
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#clickME {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #000;
+}

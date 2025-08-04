@@ -1,0 +1,118 @@
+{
+  "icons": {
+    "GitHub": {
+      "icon": "images/icon/github.svg",
+      "url": "https://github.com/ksmlc"
+    },
+    "Mail": {
+      "icon": "images/icon/邮箱.svg",
+      "url": "mailto:2760460838@qq.com"
+    },
+    "B站": {
+      "icon": "images/icon/哔哩哔哩.svg",
+      "url": "https://space.bilibili.com/1947999330?spm_id_from=333.999.0.0"
+    },
+    "Gitee": {
+      "icon": "images/icon/gitee.svg",
+      "url": "https://gitee.com/ksmlc"
+    },
+    "抖音": {
+      "icon": "images/icon/抖音.svg",
+      "url": "https://v.douyin.com/ijhxxhHg/"
+    },
+    "快手": {
+      "icon": "images/icon/快手.svg",
+      "url": "https://v.kuaishou.com/8Pedqq"
+    }
+  },
+  "WebSite": [
+    {
+      "url": "https://z.ksmlc.cn/",
+      "title": "KS-MLC|资源导航",
+      "description": "TwoNav网址导航",
+      "image": "./images/icon/zksmlccn.svg"
+    },
+    {
+      "url": "https://blog.ksmlc.cn/",
+      "title": "KS-MLC|Blog",
+      "description": "我的Blog",
+      "image": "./images/icon/typecho.svg"
+    },
+    {
+      "url": "https://alist.ksmlc.cn/",
+      "title": "KS-MLC|Alist",
+      "description": "Alist网盘",
+      "image": "./images/icon/alist.svg"
+    },
+    {
+      "url": "https://demo.ksmlc.cn/",
+      "title": "KS-MLC|演示站",
+      "description": "项目演示站",
+      "image": "./images/icon/demo.svg"
+    },
+    {
+      "url": "https://cloud.ksmlc.cn/",
+      "title": "KS-MLC|Cloudreve",
+      "description": "Cloudreve网盘",
+      "image": "./images/icon/cloudreve.png"
+    }
+  ],
+  "Projects": [
+    {
+      "url": "https://z.ksmlc.cn/?c=click&id=534",
+      "title": "Typora-KeepStyle",
+      "description": "为Typora编写的主题",
+      "image": "./images/icon/typora.png"
+    },{
+      "url": "https://z.ksmlc.cn/?c=click&id=837",
+      "title": "GreenLumaPro",
+      "description": "Steam游戏解锁工具",
+      "image": "./images/icon/GreenLumaProGUI.svg"
+    },{
+      "url": "https://z.ksmlc.cn/?c=click&id=988",
+      "title": "SteamUnlockFM",
+      "description": "Steam解锁文件管理器",
+      "image": "./images/icon/GreenLumaProGUI.svg"
+    },{
+      "url": "https://z.ksmlc.cn/?c=article&id=8",
+      "title": "菜玩Steam盒子",
+      "description": "菜玩Steam账号共享盒子",
+      "image": "./images/icon/cai.ico"
+    }
+  ],
+  "friend": [
+    {
+      "href": "https://v.douyin.com/ij2QQ6Ww/",
+      "img_src": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_b5e7459be109b2ed0b48c4b0d86496cc~c5_300x300.jpeg?from=2956013662",
+      "alt": "LBT"
+    },
+    {
+      "href": "https://v.douyin.com/ij2QGehS/",
+      "img_src": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813c000-ce_oUPDfAuA9IQA6ejfuAEAsDDnAzlFEEo4EwRuiD~c5_300x300.jpeg",
+      "alt": "QSW"
+    },
+    {
+      "href": "https://v.douyin.com/ij2Q4qf5/",
+      "img_src": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813c001_oQp1GLGn7BBBBIAh5VIEhUEASAmAp0AfqQeCfB~c5_300x300.jpeg?from=2956013662",
+      "alt": "ZGQ"
+    },
+    {
+      "href": "https://v.douyin.com/ij2QPjfF/",
+      "img_src": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813c001_oAtRjAGB7QmAyaff4CIAxdDQAG8FEBXcEArezr~c5_300x300.jpeg?from=2956013662",
+      "alt": "ZSL"
+    },
+    {
+      "href": "https://v.douyin.com/ij2Qb6v7/",
+      "img_src": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_d1d46f777bf94dd9a15552ad56e2bbbf~c5_300x300.jpeg?from=2956013662",
+      "alt": "ZJL"
+    }
+  ],
+  "Left_block_list_Information": [
+    "中国", "广西柳州","大学生","ksmlc", "软件开发者",
+    "程序员", "广西制造工程职业技术学院"
+  ],
+  "Left_block_list_interest": [
+    "旅行","音乐", "Steam", "刺客伍六七","剑来","看极光","挪威","冰岛",
+    "Python"
+  ]
+}

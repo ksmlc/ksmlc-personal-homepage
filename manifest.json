@@ -1,0 +1,30 @@
+{
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "icons": [
+        {
+            "sizes": "64x64 32x32 24x24 16x16",
+            "src": "./images/ksmlc.ico",
+            "type": "image/x-icon"
+        },
+        {
+            "sizes": "192x192",
+            "src": "./images/ksmlc_192x192.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "512x512",
+            "src": "./images/ksmlc_512x512.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "144x144",
+            "src": "./images/ksmlc_144x144.png",
+            "type": "image/png"
+        }
+    ],
+    "name": "KS-MLC",
+    "short_name": "KS-MLC",
+    "start_url": ".",
+    "theme_color": "#000000"
+}
