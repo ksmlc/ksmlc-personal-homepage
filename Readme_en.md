@@ -10,7 +10,7 @@ This is the complete source code of my personal homepage ksmlc.cn, written in **
 - 🎉 Festival countdown lantern animation
 - 🔗 Project showcase, external links and friend links
 
-![预览图片](https://alist.ksmlc.cn/d/Private/%E5%A4%A9%E7%BF%BC10T/%E6%88%91%E7%9A%84%E5%9B%BE%E7%89%87/%E5%9B%BE%E5%BA%8A/PicList/PixPin_2025-08-08_09-42-46.png)
+<img width="1509" height="940" alt="PixPin_2025-08-08_09-42-46" src="https://github.com/user-attachments/assets/b43c203c-bf8b-43be-8c48-5036383ee23f" />
 
 ## 🌟 Technical Features
 
