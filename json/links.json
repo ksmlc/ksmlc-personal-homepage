@@ -74,11 +74,6 @@
       "description": "Steam解锁文件管理器",
       "image": "./images/icon/GreenLumaProGUI.svg"
     },{
-      "url": "https://z.ksmlc.cn/?c=article&id=8",
-      "title": "菜玩Steam盒子",
-      "description": "菜玩Steam账号共享盒子",
-      "image": "./images/icon/cai.ico"
-    },{
       "url": "https://github.com/ksmlc/ksmlc-personal-homepage",
       "title": "KS-MLC|个人主页",
       "description": "本站点的源码现已开源",

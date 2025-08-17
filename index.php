@@ -59,7 +59,7 @@
             <p>无论近远 不分昼夜</p>
         </div>
         <div class="translated-Left_famous_saying-description translated-description Left_block" ondblclick="toggleTranslation('Left_famous_saying')">
-            <p>只管优雅 从容四方</p>
+            <p>𝓓𝓪𝔂 𝓪𝓷𝓭 𝓷𝓲𝓰𝓱𝓽, 𝓷𝓮𝓪𝓮 𝓪𝓷𝓭 𝓯𝓪𝓻.</p>
         </div>
 
         <div class="Left_block">
@@ -129,18 +129,18 @@
             </div>
         </header>
         <!--介绍-->
-        <div class="welcome Name_Meaning-description" ondblclick="toggleTranslation('Name_Meaning')">Hi, I'm
-            <div class="gradientText">KS</div>
+        <div class="welcome Name_Meaning-description" ondblclick="toggleTranslation('Name_Meaning')">𝐻𝑖, 𝐼'𝑚
+            <div class="gradientText">𝑲𝑺</div>
             -
-            <div class="gradientText">MLC</div>
+            <div class="gradientText">𝑴𝑳𝑪</div>
         </div>
         <div class="welcome translated-Name_Meaning-description translated-description"
-             ondblclick="toggleTranslation('Name_Meaning')">Hi, welcome to
-            <div class="gradientText">ksmlc.cn</div>
+             ondblclick="toggleTranslation('Name_Meaning')">𝐻𝑖, 𝑤𝑒𝑙𝑐𝑜𝑚𝑒 𝑡𝑜
+            <div class="gradientText">𝒌𝒔𝒎𝒍𝒄.𝒄𝒏</div>
         </div>
         <!-- 介绍个人 -->
-        <div class="personal_career-description description" ondblclick='toggleTranslation("personal_career")'>🧑🏻‍💻 <span class="purpleText">Front-end</span>, <span class="purpleText">Software</span> Developer /
-            Studying at <span class="purpleText">Guangxi Vocational and Technical College of Manufacture Engineering(Software Development)</span></div>
+        <div class="personal_career-description description" ondblclick='toggleTranslation("personal_career")'>🧑🏻‍💻 <span class="purpleText">𝑭𝒓𝒐𝒏𝒕-𝒆𝒏𝒅</span>, <span class="purpleText">𝑺𝒐𝒇𝒕𝒘𝒂𝒓𝒆</span> Developer /
+            Studying at <span class="purpleText">𝑮𝒖𝒂𝒏𝒈𝒙𝒊 𝑽𝒐𝒄𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝒂𝒏𝒅 𝑻𝒆𝒄𝒉𝒏𝒊𝒄𝒂𝒍 𝑪𝒐𝒍𝒍𝒆𝒈𝒆 𝒐𝒇 𝑴𝒂𝒏𝒖𝒇𝒂𝒄𝒕𝒖𝒓𝒆 𝑬𝒏𝒈𝒊𝒏𝒆𝒆𝒓𝒊𝒏𝒈(𝑺𝒐𝒇𝒕𝒘𝒂𝒓𝒆 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒎𝒆𝒏𝒕)</span></div>
         <!-- 翻译个人 -->
         <div class="translated-personal_career-description translated-description description"
              ondblclick="toggleTranslation('personal_career')">
