@@ -2,17 +2,17 @@
 <html lang="zh_CN">
 
 <head>
-    <meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><title>Hi, I'm KS-MLC Is a Developer</title><link rel="icon" href="images/ksmlc.ico"><meta name="description" content="Hello,I'm KS-MLC@MoLechun莫乐春,Front-end,Software Developer / Studying at Guangxi Vocational and Technical College of Manufacture Engineering(Software Development)."><meta name="keywords" content="ksmlc,KS-MLC,KSMLC主页,KSMLC个人介绍,KS-MLC,molechun,莫乐春"><meta name="og:title" contect="KS-MLC"><meta name="og:type" contect="website"><meta property="og:locale" content="zh_CN"><meta name="og:description" contect="Hello,I'm KS-MLC@MoLechun莫乐春,Front-end,Software Developer / Studying at Guangxi Vocational and Technical College of Manufacture Engineering(Software Development)."><meta name="og:site_name" contect="KS-MLC"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><title>Hi, I'm ksmlc Is a Developer</title><link rel="icon" href="images/ksmlc.ico"><meta name="description" content="Hello,I'm ksmlc,Front-end,Software Developer / Studying at Guangxi Vocational and Technical College of Manufacture Engineering(Software Development)."><meta name="keywords" content="ksmlc,KS-MLC,KSMLC主页,KSMLC个人介绍,KS-MLC,molechun,莫乐春"><meta name="og:title" contect="ksmlc"><meta name="og:type" contect="website"><meta property="og:locale" content="zh_CN"><meta name="og:description" contect="Hello,I'm ksmlc,Front-end,Software Developer / Studying at Guangxi Vocational and Technical College of Manufacture Engineering(Software Development)."><meta name="og:site_name" contect="ksmlc"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/mouse.css">
     <link rel="stylesheet" href="./css/time.css">
 <!--    <link rel="manifest" href="./manifest.json">-->
-    <script src="./js/notification.js" rel="external nofollow"></script>
+    <script src="./js/notification.js"></script>
 </head>
 <script src="js/jiami.js"></script>
 
 <body>
-<h1 style="display: none;">KS-MLC|个人主页 - 开发者KS-MLC的个人介绍主页</h1>
+<h1 style="display: none;">KS-MLC|个人主页 - 开发者ksmlc的个人介绍主页</h1>
 <style>
     .deng-box{position:fixed;top:-40px;right:-20px;z-index:99;pointer-events:none}.deng-box1{position:fixed;top:-30px;right:10px;z-index:99;pointer-events:none}.deng-box2{position:fixed;top:-40px;left:-20px;z-index:99;pointer-events:none}.deng-box3{position:fixed;top:-30px;left:10px;z-index:99;pointer-events:none}.deng-box1 .deng,.deng-box3 .deng{position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,.8);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 5s infinite ease-in-out;box-shadow:-5px 5px 30px 4px #fc903d}.deng{position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,.8);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 3s infinite ease-in-out;box-shadow:-5px 5px 50px 4px #fa6c00}.deng-a{width:100px;height:90px;background:#d8000f;background:rgba(216,0,15,.1);margin:12px 8px 8px;border-radius:50% 50%;border:2px solid #dc8f03}.deng-b{width:45px;height:90px;background:#d8000f;background:rgba(216,0,15,.1);margin:-4px 8px 8px 26px;border-radius:50% 50%;border:2px solid #dc8f03}.xian{position:absolute;top:-20px;left:60px;width:2px;height:20px;background:#dc8f03}.shui-a{position:relative;width:5px;height:20px;margin:-5px 0 0 59px;-webkit-animation:swing 4s infinite ease-in-out;-webkit-transform-origin:50% -45px;background:orange;border-radius:0 0 5px 5px}.shui-b{position:absolute;top:14px;left:-2px;width:10px;height:10px;background:#dc8f03;border-radius:50%}.shui-c{position:absolute;top:18px;left:-2px;width:10px;height:35px;background:orange;border-radius:0 0 0 5px}.deng:before{position:absolute;top:-7px;left:29px;height:12px;width:60px;content:" ";display:block;z-index:999;border-radius:5px 5px 0 0;border:solid 1px #dc8f03;background:orange;background:linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng:after{position:absolute;bottom:-7px;left:10px;height:12px;width:60px;content:" ";display:block;margin-left:20px;border-radius:0 0 5px 5px;border:solid 1px #dc8f03;background:orange;background:linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng-t{font-family:华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;font-size:3.2rem;color:#dc8f03;font-weight:700;line-height:85px;text-align:center}.night .deng-box,.night .deng-box1,.night .deng-t{background:0 0!important}@-moz-keyframes swing{0%{-moz-transform:rotate(-10deg)}50%{-moz-transform:rotate(10deg)}100%{-moz-transform:rotate(-10deg)}}@-webkit-keyframes swing{0%{-webkit-transform:rotate(-10deg)}50%{-webkit-transform:rotate(10deg)}100%{-webkit-transform:rotate(-10deg)}}@media(max-width:600px){#container{display:none}}
 </style>
@@ -56,10 +56,10 @@
     <div class="main-left">
         <img style="width: 150px;" src="images/ksmlc.png" alt="头像">
         <div class="Left_block Left_famous_saying-description" ondblclick="toggleTranslation('Left_famous_saying')">
-            <p>无论近远 不分昼夜</p>
+            <p>不分昼夜 无论近远</p>
         </div>
         <div class="translated-Left_famous_saying-description translated-description Left_block" ondblclick="toggleTranslation('Left_famous_saying')">
-            <p>𝓓𝓪𝔂 𝓪𝓷𝓭 𝓷𝓲𝓰𝓱𝓽, 𝓷𝓮𝓪𝓮 𝓪𝓷𝓭 𝓯𝓪𝓻.</p>
+            <p>𝓓𝓪𝔂 𝓪𝓷𝓭 𝓷𝓲𝓰𝓱𝓽, 𝓷𝓮𝓪𝓮 𝓸𝓻 𝓯𝓪𝓻.</p>
         </div>
 
         <div class="Left_block">
@@ -130,9 +130,7 @@
         </header>
         <!--介绍-->
         <div class="welcome Name_Meaning-description" ondblclick="toggleTranslation('Name_Meaning')">𝐻𝑖, 𝐼'𝑚
-            <div class="gradientText">𝑲𝑺</div>
-            -
-            <div class="gradientText">𝑴𝑳𝑪</div>
+            <div class="gradientText">𝒌𝒔𝒎𝒍𝒄</div>
         </div>
         <div class="welcome translated-Name_Meaning-description translated-description"
              ondblclick="toggleTranslation('Name_Meaning')">𝐻𝑖, 𝑤𝑒𝑙𝑐𝑜𝑚𝑒 𝑡𝑜
@@ -260,12 +258,12 @@
         <!--我的联系方法-->
         <div class="iconContainer">
             <!-- 微信图标 popupImg -->
-            <a class="iconItem" href="javascript:void(0)" onclick="showContactPopup('wx')">
+            <a class="iconItem" href="javascript:void(0)" onclick="popupImg('wx')">
                 <img src="images/icon/微信.svg" alt="微信 Icon" width="22" height="22">
                 <span class="tooltip">微信</span>
             </a>
             <!-- QQ图标 popupImg -->
-            <a class="iconItem" href="javascript:void(0)" onclick="showContactPopup('qq')">
+            <a class="iconItem" href="javascript:void(0)" onclick="popupImg('qq')">
                 <img src="images/icon/qq.svg" alt="QQ Icon" width="22" height="22">
                 <span class="tooltip">QQ</span>
             </a>
@@ -346,6 +344,16 @@
                 </div>
             </div>
             <!--音乐结束-->
+        </div>
+
+        <!-- 悬浮歌词显示 -->
+        <div id="floating-lyrics" class="floating-lyrics">
+            <div class="floating-lyrics-content">
+                <div class="floating-lyrics-text" id="floating-lyrics-text">暂无歌词</div>
+                <div class="floating-lyrics-controls">
+                    <button id="floating-lyrics-close" class="floating-lyrics-close">&times;</button>
+                </div>
+            </div>
         </div>
 
         <content>

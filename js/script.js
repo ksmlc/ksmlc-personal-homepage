@@ -210,13 +210,13 @@ function popupImg(icon) {
 
     popup.style.display = 'flex';
 }
+
 /*QQ微信弹窗*/
 function showContactPopup() {
     swal({
         text: "嘻嘻，你被骗了，这啥也没有！",
     });
 }
-
 
 function hidePopup() {
     var popup = document.getElementById('popup');
@@ -277,6 +277,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const chartListBtn = document.getElementById('chart-list-btn');
     const closeModals = document.querySelectorAll('.close');
     const progressContainer = document.querySelector('.progress-container');
+    
+    // 悬浮歌词相关元素
+    const floatingLyrics = document.getElementById('floating-lyrics');
+    const floatingLyricsText = document.getElementById('floating-lyrics-text');
+    const floatingLyricsClose = document.getElementById('floating-lyrics-close');
+    
+    // 悬浮歌词控制函数
+    function showFloatingLyrics() {
+        if (floatingLyrics) {
+            floatingLyrics.classList.add('show');
+        }
+    }
+    
+    function hideFloatingLyrics() {
+        if (floatingLyrics) {
+            floatingLyrics.classList.remove('show');
+        }
+    }
+    
+    function updateFloatingLyrics(lyricsText) {
+        if (floatingLyricsText) {
+            floatingLyricsText.textContent = lyricsText || '暂无歌词';
+        }
+    }
+    
+    // 悬浮歌词关闭按钮事件
+    if (floatingLyricsClose) {
+        floatingLyricsClose.addEventListener('click', () => {
+            hideFloatingLyrics();
+        });
+    }
 
     // 监听进度条点击事件，点击后跳转到相应位置
     progressContainer.addEventListener('click', (event) => {
@@ -432,7 +463,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function displayLyrics() {
-        lyricsLine.textContent = lyricsLines.length > 0 ? lyricsLines[0].text : '暂无歌词';
+        const initialLyrics = lyricsLines.length > 0 ? lyricsLines[0].text : '暂无歌词';
+        lyricsLine.textContent = initialLyrics;
+        updateFloatingLyrics(initialLyrics); // 同时更新悬浮歌词
         lyricsLineContainer.scrollTo({
             left: 0,
             top: 0,
@@ -440,16 +473,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 优化歌词更新，减少频繁的DOM操作
+    let lastLyricsIndex = -1;
     function updateLyricsHighlight() {
         const currentTime = musicAudio.currentTime * 1000;
         for (let i = 0; i < lyricsLines.length; i++) {
             if (i === lyricsLines.length - 1 || currentTime < parseTime(lyricsLines[i + 1].time)) {
-                lyricsLine.textContent = lyricsLines[i].text;
-                lyricsLineContainer.scrollTo({
-                    left: 0,
-                    top: i * (lyricsLine.offsetHeight + 10),
-                    behavior: 'smooth'
-                });
+                // 只在歌词变化时更新DOM
+                if (i !== lastLyricsIndex) {
+                    const currentLyrics = lyricsLines[i].text;
+                    lyricsLine.textContent = currentLyrics;
+                    updateFloatingLyrics(currentLyrics);
+                    lastLyricsIndex = i;
+                }
                 break;
             }
         }
@@ -497,9 +533,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // 事件监听保持原有逻辑
             musicAudio.addEventListener('play', () => {
                 playPauseBtn.innerHTML = '<img src="./images/icon/音乐暂停.svg" alt="暂停">';
+                showFloatingLyrics(); // 播放时显示悬浮歌词
             });
             musicAudio.addEventListener('pause', () => {
                 playPauseBtn.innerHTML = '<img src="./images/icon/音乐播放.svg" alt="播放">';
+                hideFloatingLyrics(); // 暂停时隐藏悬浮歌词
             });
         }).catch(error => {
             console.error('音乐详情加载失败:', error);
@@ -522,6 +560,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     musicAudio.addEventListener('ended', () => {
+        hideFloatingLyrics(); // 歌曲结束时隐藏悬浮歌词
         loadNextMusic();
     });
 
@@ -618,7 +657,14 @@ document.addEventListener('DOMContentLoaded', () => {
         loadNextMusic();
     });
 
+    // 优化时间更新，降低更新频率
+    let lastUpdateTime = 0;
     musicAudio.addEventListener('timeupdate', () => {
+        const now = Date.now();
+        // 限制更新频率为每200ms一次
+        if (now - lastUpdateTime < 200) return;
+        lastUpdateTime = now;
+
         const progressPercent = (musicAudio.currentTime / musicAudio.duration) * 100;
         progress.style.width = `${progressPercent}%`;
 
