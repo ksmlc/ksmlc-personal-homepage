@@ -10,7 +10,7 @@
 - 🎉 节日倒计时灯笼动画
 - 🔗 项目展示、外部链接及友情链接
 
-<img width="1509" height="940" alt="PixPin_2025-08-08_09-42-46" src="https://github.com/user-attachments/assets/b43c203c-bf8b-43be-8c48-5036383ee23f" />
+<img width="1496" height="932" alt="BgSub_PixPin_2025-10-06_23-05-07" src="https://github.com/user-attachments/assets/ec76ccf1-79ff-414b-a216-64597601409a" />
 
 
 ## 🌟 技术特性
