@@ -2,49 +2,133 @@
 <html lang="zh_CN">
 
 <head>
-    <meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><title>Hi, I'm ksmlc Is a Developer</title><link rel="icon" href="images/ksmlc.ico"><meta name="description" content="Hello,I'm ksmlc,Front-end,Software Developer / Studying at Guangxi Vocational and Technical College of Manufacture Engineering(Software Development)."><meta name="keywords" content="ksmlc,KS-MLC,KSMLC主页,KSMLC个人介绍,KS-MLC,molechun,莫乐春"><meta name="og:title" contect="ksmlc"><meta name="og:type" contect="website"><meta property="og:locale" content="zh_CN"><meta name="og:description" contect="Hello,I'm ksmlc,Front-end,Software Developer / Studying at Guangxi Vocational and Technical College of Manufacture Engineering(Software Development)."><meta name="og:site_name" contect="ksmlc"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Hi, I'm ksmlc | Full-Stack Developer</title>
+    <link rel="icon" href="images/ksmlc.ico">
+    <meta name="description" content="Hello, I'm ksmlc, A full-stack developer who loves Python development, writing down my passion in the form of code!">
+    <meta name="keywords" content="ksmlc, KS-MLC, 个人主页, 全栈开发者, Python开发">
+    <!-- QQ专属分享元标签（优先被QQ解析） -->
+    <meta name="qzone:title" content="Hi, I'm ksmlc | Python全栈开发者">
+    <meta name="qzone:description" content="ksmlc，一名热爱Python的全栈开发者，以代码书写我所热爱！">
+    <meta name="qzone:image" content="https://ksmlc.cn/images/ksmlc.jpg">
+    <meta name="qzone:type" content="website">
+    <!-- Open Graph 元数据（通用社交分享，QQ也会兼容） -->
+    <meta property="og:title" content="ksmlc | Full-Stack Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:description" content="Hello, I'm ksmlc, A full-stack developer who loves Python development, writing down my passion in the form of code!">
+    <meta property="og:site_name" content="ksmlc">
+    <meta property="og:image" content="https://ksmlc.cn/images/ksmlc.jpg">
+    <meta property="og:url" content="https://ksmlc.cn">
+    <!-- 移动端视口配置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/mouse.css">
     <link rel="stylesheet" href="./css/time.css">
 <!--    <link rel="manifest" href="./manifest.json">-->
-    <script src="./js/notification.js"></script>
 </head>
 <script src="js/jiami.js"></script>
-
+<script src="./js/music.js"></script>
 <body>
-<h1 style="display: none;">KS-MLC|个人主页 - 开发者ksmlc的个人介绍主页</h1>
+<h1 style="display: none;">KS-MLC|个人主页 - Hello, I'm ksmlc, A full-stack developer who loves Python development, writing down my passion in the form of code!</h1>
 <style>
     .deng-box{position:fixed;top:-40px;right:-20px;z-index:99;pointer-events:none}.deng-box1{position:fixed;top:-30px;right:10px;z-index:99;pointer-events:none}.deng-box2{position:fixed;top:-40px;left:-20px;z-index:99;pointer-events:none}.deng-box3{position:fixed;top:-30px;left:10px;z-index:99;pointer-events:none}.deng-box1 .deng,.deng-box3 .deng{position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,.8);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 5s infinite ease-in-out;box-shadow:-5px 5px 30px 4px #fc903d}.deng{position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,.8);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 3s infinite ease-in-out;box-shadow:-5px 5px 50px 4px #fa6c00}.deng-a{width:100px;height:90px;background:#d8000f;background:rgba(216,0,15,.1);margin:12px 8px 8px;border-radius:50% 50%;border:2px solid #dc8f03}.deng-b{width:45px;height:90px;background:#d8000f;background:rgba(216,0,15,.1);margin:-4px 8px 8px 26px;border-radius:50% 50%;border:2px solid #dc8f03}.xian{position:absolute;top:-20px;left:60px;width:2px;height:20px;background:#dc8f03}.shui-a{position:relative;width:5px;height:20px;margin:-5px 0 0 59px;-webkit-animation:swing 4s infinite ease-in-out;-webkit-transform-origin:50% -45px;background:orange;border-radius:0 0 5px 5px}.shui-b{position:absolute;top:14px;left:-2px;width:10px;height:10px;background:#dc8f03;border-radius:50%}.shui-c{position:absolute;top:18px;left:-2px;width:10px;height:35px;background:orange;border-radius:0 0 0 5px}.deng:before{position:absolute;top:-7px;left:29px;height:12px;width:60px;content:" ";display:block;z-index:999;border-radius:5px 5px 0 0;border:solid 1px #dc8f03;background:orange;background:linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng:after{position:absolute;bottom:-7px;left:10px;height:12px;width:60px;content:" ";display:block;margin-left:20px;border-radius:0 0 5px 5px;border:solid 1px #dc8f03;background:orange;background:linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng-t{font-family:华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;font-size:3.2rem;color:#dc8f03;font-weight:700;line-height:85px;text-align:center}.night .deng-box,.night .deng-box1,.night .deng-t{background:0 0!important}@-moz-keyframes swing{0%{-moz-transform:rotate(-10deg)}50%{-moz-transform:rotate(10deg)}100%{-moz-transform:rotate(-10deg)}}@-webkit-keyframes swing{0%{-webkit-transform:rotate(-10deg)}50%{-webkit-transform:rotate(10deg)}100%{-webkit-transform:rotate(-10deg)}}@media(max-width:600px){#container{display:none}}
 </style>
 <!--灯笼-->
-<!-- 包含HTML代码的容器元素 -->
 <div id="container"></div>
 <script>
-    // 检查当前时间是否已经达到指定的时间
-    function isTimeToDisplay() {
+    function getDisplayText() {
         var currentTime = new Date();
-        var targetTime = new Date("2025-01-01T00:00:00"); // 用您的目标时间替换这里
+        var currentMonth = currentTime.getMonth() + 1;
+        var currentDate = currentTime.getDate();
+        var currentHour = currentTime.getHours();
+        var currentMinute = currentTime.getMinutes();
+        var currentSecond = currentTime.getSeconds();
 
-        return currentTime >= targetTime;
+        if (currentMonth === 1 && currentDate === 1) {
+            return "元旦快乐";
+        }
+        if (currentMonth === 12 && currentDate === 24) {
+            return "岁岁平安";
+        }
+        if (currentMonth === 2 && currentDate === 21) {
+            return "生日快乐";
+        }
+        if (currentMonth === 10 && currentDate === 1) {
+            return "国庆快乐";
+        }
+        if (currentMonth === 10 && currentDate === 24) {
+            return "1024";
+        }
+        // 以下为不固定日期的事件
+        if (currentMonth === 9 && currentDate === 25) {
+            return "中秋快乐";
+        }
+        if (currentMonth === 2 && currentDate === 16) {
+            return "除夕快乐";
+        }
+
+        return "四季如春";
     }
 
-    // 如果是显示时间，将HTML元素添加到DOM的函数
-    function displayElementsIfTime() {
-        if (isTimeToDisplay()) {
-            var container = document.getElementById("container"); // 用您的容器元素的ID替换这里
+    // 生成灯笼HTML的函数
+    function generateLanternHTML(text) {
+        // 确保text是4个字符
+        while (text.length < 4) {
+            text += " "; // 如果不够4个字符，用空格补充
+        }
+        text = text.substring(0, 4); // 如果超过4个字符，截取前4个
 
-            // 将HTML代码添加到容器
-            container.innerHTML = `
-<div class="deng-box2"><div class="deng"><div class="xian"></div><div class="deng-a"><div class="deng-b"><div class="deng-t">岁</div></div></div><div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div></div></div><div class="deng-box3"><div class="deng"><div class="xian"></div><div class="deng-a"><div class="deng-b"><div class="deng-t">岁</div></div></div><div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div></div></div><div class="deng-box1"><div class="deng"><div class="xian"></div><div class="deng-a"><div class="deng-b"><div class="deng-t">平</div></div></div><div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div></div></div><div class="deng-box"><div class="deng"><div class="xian"></div><div class="deng-a"><div class="deng-b"><div class="deng-t">安</div></div></div><div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div></div></div>
+        var container = document.getElementById("container");
+
+        // 将HTML代码添加到容器
+        container.innerHTML = `
+<div class="deng-box2"><div class="deng"><div class="xian"></div><div class="deng-a"><div class="deng-b"><div class="deng-t">${text[0]}</div></div></div><div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div></div></div><div class="deng-box3"><div class="deng"><div class="xian"></div><div class="deng-a"><div class="deng-b"><div class="deng-t">${text[1]}</div></div></div><div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div></div></div><div class="deng-box1"><div class="deng"><div class="xian"></div><div class="deng-a"><div class="deng-b"><div class="deng-t">${text[2]}</div></div></div><div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div></div></div><div class="deng-box"><div class="deng"><div class="xian"></div><div class="deng-a"><div class="deng-b"><div class="deng-t">${text[3]}</div></div></div><div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div></div></div>
             `;
+    }
 
-            // 一旦元素显示，停止间隔检查
-            clearInterval(intervalId);
+    // 显示灯笼的函数
+    function displayLanterns() {
+        var displayText = getDisplayText();
+
+        // 只在文本变化时更新DOM，避免不必要的重绘
+        if (window.currentDisplayText !== displayText) {
+            generateLanternHTML(displayText);
+            window.currentDisplayText = displayText;
+
+            // 控制台输出样式
+            var console_displays = [
+                "padding: 5px 10px; border-radius: 5px 0 0 5px; background-color: #f0c75e; font-weight: bold; color: #8b4513;",
+                "padding: 5px 10px; border-radius: 0 5px 5px 0; background-color: #8b4513; font-weight: bold; color: #f0c75e;"
+            ];
+
+            var consoleMessage = "";
+            if (displayText === "元旦快乐") {
+                consoleMessage = "祝大家新年快乐！";
+            } else if (displayText === "岁岁平安") {
+                consoleMessage = "岁岁平 岁岁安 岁岁平安，年年岁岁 岁岁年年 平平安安！";
+            } else if (displayText === "生日快乐") {
+                consoleMessage = "祝自己生日快乐！";
+            } else if (displayText === "国庆快乐") {
+                consoleMessage = "大家国庆快乐！";
+            } else if (displayText === "中秋快乐") {
+                consoleMessage = "水中有明月，碎碎圆圆；心中有良人，平平安安。";
+            } else if (displayText === "除夕快乐") {
+                consoleMessage = "愿大家在除夕，平安喜乐！";
+            } else if (displayText === "1024") {
+                consoleMessage = "祝所有程序员节日快乐！没有bug，代码永无报错！";
+            } else {
+                consoleMessage = "愿大家心境，四季如春！";
+            }
+
+            // 输出控制台log - 左边displayText，右边祝福语
+            console.log("%c" + displayText + "%c " + consoleMessage, console_displays[0], console_displays[1]);
         }
     }
 
-    // 每1000毫秒（1秒）检查并显示元素
-    var intervalId = setInterval(displayElementsIfTime, 200);
+    // 每200毫秒检查并显示灯笼
+    var intervalId = setInterval(displayLanterns, 200);
 </script>
 <!--灯笼-->
 <script src="./js/fps.js"></script>
@@ -56,10 +140,10 @@
     <div class="main-left">
         <img style="width: 150px;" src="images/ksmlc.png" alt="头像">
         <div class="Left_block Left_famous_saying-description" ondblclick="toggleTranslation('Left_famous_saying')">
-            <p>不分昼夜 无论近远</p>
+            <p style="font-family: 'Cascadia Code', serif;">Hello, World！</p>
         </div>
         <div class="translated-Left_famous_saying-description translated-description Left_block" ondblclick="toggleTranslation('Left_famous_saying')">
-            <p>𝓓𝓪𝔂 𝓪𝓷𝓭 𝓷𝓲𝓰𝓱𝓽, 𝓷𝓮𝓪𝓮 𝓸𝓻 𝓯𝓪𝓻.</p>
+            <p style="font-family: '楷体', serif;">你好, 世界！</p>
         </div>
 
         <div class="Left_block">
@@ -75,11 +159,9 @@
                     <?php
                     $skills_to_display = array_slice($card_skill, 0);
                     foreach ($skills_to_display as $skill) :
-                        $encoded_skill = urlencode($skill);
-                        $search_url = "https://cn.bing.com/search?q=$encoded_skill";
                         ?>
                         <div class="circle">
-                            <a href="<?php echo $search_url; ?>" target="_blank" rel="noopener noreferrer">
+                            <a href="javascript:void(0)" onclick="handleSkillClick('<?php echo addslashes($skill); ?>')" target="_blank" rel="noopener noreferrer">
                                 <span><?php echo $skill; ?></span>
                             </a>
                         </div>
@@ -137,45 +219,70 @@
             <div class="gradientText">𝒌𝒔𝒎𝒍𝒄.𝒄𝒏</div>
         </div>
         <!-- 介绍个人 -->
-        <div class="personal_career-description description" ondblclick='toggleTranslation("personal_career")'>🧑🏻‍💻 <span class="purpleText">𝑭𝒓𝒐𝒏𝒕-𝒆𝒏𝒅</span>, <span class="purpleText">𝑺𝒐𝒇𝒕𝒘𝒂𝒓𝒆</span> Developer /
-            Studying at <span class="purpleText">𝑮𝒖𝒂𝒏𝒈𝒙𝒊 𝑽𝒐𝒄𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝒂𝒏𝒅 𝑻𝒆𝒄𝒉𝒏𝒊𝒄𝒂𝒍 𝑪𝒐𝒍𝒍𝒆𝒈𝒆 𝒐𝒇 𝑴𝒂𝒏𝒖𝒇𝒂𝒄𝒕𝒖𝒓𝒆 𝑬𝒏𝒈𝒊𝒏𝒆𝒆𝒓𝒊𝒏𝒈(𝑺𝒐𝒇𝒕𝒘𝒂𝒓𝒆 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒎𝒆𝒏𝒕)</span></div>
-        <!-- 翻译个人 -->
-        <div class="translated-personal_career-description translated-description description"
-             ondblclick="toggleTranslation('personal_career')">
-            🧑🏻‍💻 <span class="purpleText">前端</span>、<span class="purpleText">软件</span>开发人员/就读于<span
-                    class="purpleText">广西制造工程职业技术学院(软件开发)</span>
+        <div class="personal_career-description description" ondblclick='toggleTranslation("personal_career")'>
+            🧑🏻‍💻 A <span class="purpleText">full-stack developer</span> who loves <span class="purpleText">Python</span> development, writing down my <span class="purpleText">passion</span> in the form of <span class="purpleText">code</span>!
         </div>
+        <!-- 翻译个人 -->
+        <div class="translated-personal_career-description translated-description description" ondblclick="toggleTranslation('personal_career')">
+            🧑🏻‍💻 一名热爱<span class="purpleText">Python</span>开发的<span class="purpleText">全栈开发者</span>，以<span class="purpleText">代码</span>形式书写我所<span class="purpleText">热爱</span>！
+        </div>
+
         <!-- 名言 -->
-        <div class="famous_saying-description description" ondblclick='toggleTranslation("famous_saying")'>📋 You say <span class="purpleText textBackground">hesitant to encounter things</span>, can go and ask about
-            the <span class="purpleText textBackground">spring wind</span>,
-            The spring wind <span class="purpleText textBackground">doesn't speak</span>, Then follow <span class="purpleText textBackground">your heart</span>. If I have a <span class="purpleText textBackground">firm</span> heart,
-            <span class="purpleText textBackground">How can</span> encounter a hesitation in things? The spring wind
-            also has its <span class="purpleText textBackground">sorrows</span>, <span class="purpleText textBackground">Don't let</span> the spring winds <span class="purpleText textBackground">worry</span> about me.</div>
+        <div class="famous_saying-description description" ondblclick='toggleTranslation("famous_saying")'>📋 If you <span class="purpleText textBackground">hesitate when facing a dilemma</span>, you may ask the <span class="purpleText textBackground">spring breeze</span>. The spring breeze <span class="purpleText textBackground">says nothing</span>; then follow your <span class="purpleText textBackground">original heart</span>. If my original heart is <span class="purpleText textBackground">firm</span>, <span class="purpleText textBackground">how could</span> I hesitate when facing a dilemma? The spring breeze has its own <span class="purpleText textBackground">sorrows</span> too; <span class="purpleText textBackground">spare</span> the spring breeze from <span class="purpleText textBackground">worrying</span> about me.</div>
         <!-- 翻译名言 -->
-        <div class="translated-famous_saying-description translated-description description" ondblclick='toggleTranslation("famous_saying")'>📋 你说<span class="purpleText textBackground">遇事不决</span>，可问<span class="purpleText textBackground">春风</span>，春风<span class="purpleText textBackground">不语</span>，既随<span class="purpleText textBackground">本心</span>。我若本心<span class="purpleText textBackground">坚定</span>，<span class="purpleText textBackground">怎会</span>遇事不决？春风也有春风<span class="purpleText textBackground">愁</span>，<span class="purpleText textBackground">不劳</span>春风为我<span class="purpleText textBackground">忧</span>。</div>
-        <!-- 随机一言 -->
-        <div class="description" style="display: flex; align-items: center;">
+        <div class="translated-famous_saying-description translated-description description" ondblclick='toggleTranslation("famous_saying")'>📋 若<span class="purpleText textBackground">遇事不决</span>，可问<span class="purpleText textBackground">春风</span>，春风<span class="purpleText textBackground">不语</span>，既随<span class="purpleText textBackground">本心</span>。可我若本心<span class="purpleText textBackground">坚定</span>，又<span class="purpleText textBackground">怎会</span>遇事不决？春风也有春风<span class="purpleText textBackground">愁</span>，<span class="purpleText textBackground">不劳</span>春风为我<span class="purpleText textBackground">忧</span>。</div>        <div class="description" style="display: flex; align-items: center;">
             <span style="margin-right: 10px; font-weight: bold;">📢：</span>
-            <div id="slogan" class="purpleText" style="font-weight: bold;" ondblclick="copyText()">
+            <div id="slogan" class="purpleText" style="font-weight: bold; font-family: 楷体;" ondblclick="copyText()">
                 <?php
                 // API 地址
-                $filePath = 'https://api.ksmlc.cn/random_word/index.php';
-
-                // 获取远程 API 数据
-                $remoteContent = file_get_contents($filePath);
-
-                // 解析 JSON
-                $data = json_decode($remoteContent, true);
-
-                // 检查是否成功解析，并输出
-                if (isset($data['yiyan'])) {
-                    echo htmlspecialchars($data['yiyan'], ENT_QUOTES, 'UTF-8');
-                } else {
-                    echo '无法获取一言';
+                $apiUrl = 'https://api.ksmlc.cn/random_word/index.php';
+                
+                try {
+                    // 创建上下文选项，设置超时和错误处理
+                    $context = stream_context_create([
+                        'http' => [
+                            'timeout' => 10, // 10秒超时
+                            'method' => 'GET',
+                            'header' => [
+                                'User-Agent: Mozilla/5.0 (compatible; YiyanClient/1.0)',
+                                'Accept: application/json'
+                            ]
+                        ]
+                    ]);
+                    
+                    // 获取远程 API 数据
+                    $remoteContent = file_get_contents($apiUrl, false, $context);
+                    
+                    if ($remoteContent === false) {
+                        throw new Exception('无法连接到一言 API');
+                    }
+                    
+                    // 解析 JSON
+                    $data = json_decode($remoteContent, true);
+                    
+                    if (json_last_error() !== JSON_ERROR_NONE) {
+                        throw new Exception('API 响应格式错误');
+                    }
+                    
+                    // 检查 API 是否返回错误
+                    if (isset($data['error'])) {
+                        throw new Exception($data['error']);
+                    }
+                    
+                    // 输出一言内容
+                    if (isset($data['yiyan']) && !empty($data['yiyan'])) {
+                        echo htmlspecialchars($data['yiyan'], ENT_QUOTES, 'UTF-8');
+                    } else {
+                        throw new Exception('API 未返回有效的一言内容');
+                    }
+                    
+                } catch (Exception $e) {
+                    // 错误处理：显示友好的错误信息
+                    error_log("一言获取失败: " . $e->getMessage());
+                    echo '今日一言暂时无法获取，请稍后再试';
                 }
                 ?>
             </div>
-
         </div>
 
         <!--IP地址-->
@@ -200,32 +307,85 @@
             // 获取用户的真实IP地址
             $ipAddress = getRealIpAddr();
 
-            // 检查ip_log.txt文件是否存在
+            // 检查ip_log.txt文件是否存在并处理访问计数逻辑
+            $shouldLogAccess = true;
+            $currentCount = 1;
+
             if (file_exists($ipLogFilePath)) {
                 $ipLogData = file($ipLogFilePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-                $currentCount = count($ipLogData) + 1;
-            } else {
-                $currentCount = 1;
+
+                if (!empty($ipLogData)) {
+                    // 获取最后一条记录
+                    $lastLogEntry = end($ipLogData);
+                    $lastLogParts = explode("\t", $lastLogEntry);
+                    $lastIp = isset($lastLogParts[1]) ? trim($lastLogParts[1]) : '';
+
+                    // 如果当前IP与最后记录的IP相同，则不增加计数，也不记录新访问
+                    if ($lastIp === $ipAddress) {
+                        $shouldLogAccess = false;
+                        $currentCount = count($ipLogData);
+                    } else {
+                        // 如果IP不同，则增加计数
+                        $currentCount = count($ipLogData) + 1;
+                    }
+                } else {
+                    // 文件存在但为空，这是第一次访问
+                    $currentCount = 1;
+                }
             }
 
-            // 使用 cURL 获取IP地址信息
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "https://api.ksmlc.cn/IP/ip.php?ip=$ipAddress");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            $response = curl_exec($ch);
-            curl_close($ch);
+            // 使用 file_get_contents 获取IP地址信息（更简单的方式）
+            $apiUrl = "https://api.ksmlc.cn/IP/ip.php?ip=" . urlencode($ipAddress);
+            $response = @file_get_contents($apiUrl);
+
+            // 如果file_get_contents失败，尝试使用cURL
+            if ($response === false) {
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, $apiUrl);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_TIMEOUT, 5); // 设置超时时间为5秒
+                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // 在开发环境中禁用SSL验证
+                $response = curl_exec($ch);
+
+                if (curl_errno($ch)) {
+                    $error = curl_error($ch);
+                    // 记录错误日志
+                    error_log("cURL Error: " . $error);
+                }
+
+                curl_close($ch);
+            }
 
             // 解析响应JSON数据
-            $responseData = json_decode($response, true);
-            $city = $responseData['data']['city'] ?? '未知地点';
+            $locationData = [
+                'city' => '未知地点',
+                'province' => '',
+                'country' => '',
+                'area' => ''
+            ];
+
+            if ($response !== false) {
+                $responseData = json_decode($response, true);
+                if (json_last_error() === JSON_ERROR_NONE && isset($responseData['data'])) {
+                    $locationData = array_merge($locationData, $responseData['data']);
+                }
+            }
 
             // 输出IP地址、访问次数和城市信息
-            echo "当前IP地址是：<span id='ipAddress'>$ipAddress</span><br>来自：<span id='location'>$city</span><br>";
-            echo "您是第 $currentCount 个访问者";
+            echo "当前IP地址是：<span id='ipAddress'>" . htmlspecialchars($ipAddress) . "</span><br>";
+            echo "来自：<span id='location'>" . htmlspecialchars($locationData['city']) . "</span><br>";
+            echo "您是第 " . (int)$currentCount . " 次访问者";
 
-            // 保存IP地址到ip_log.txt文件
-            $ipLogEntry = date('Y-m-d H:i:s') . "\t" . $ipAddress . PHP_EOL;
-            file_put_contents($ipLogFilePath, $ipLogEntry, FILE_APPEND | LOCK_EX);
+            // 只有当需要记录访问时才保存到文件
+            if ($shouldLogAccess) {
+                $ipLogEntry = date('Y-m-d H:i:s') . "\t" . $ipAddress . PHP_EOL;
+                $result = file_put_contents($ipLogFilePath, $ipLogEntry, FILE_APPEND | LOCK_EX);
+
+                if ($result === false) {
+                    // 记录错误日志
+                    error_log("Failed to write to IP log file: " . $ipLogFilePath);
+                }
+            }
             ?>
         </div>
         <!--        网站运行时间-->
@@ -331,7 +491,7 @@
                     <div class="chart-modal-content">
                         <span class="close">&times;</span>
                         <h2>选择音乐歌单</h2>
-                        <div id="playlist-buttons-container"></div> <!-- 动态生成歌单按钮的容器 -->
+                        <div id="playlist-buttons-container"></div> 
                     </div>
                 </div>
 
@@ -368,15 +528,15 @@
                 $projectItems = $data['WebSite'];
                 foreach ($projectItems as $item) {
                     echo '<a class="projectItem" target="_blank" href="' . $item["url"] . '">
-    <!-- 项目项开始 -->
+    <!-- 网站列表开始 -->
     <div class="projectItemLeft">
         <h2>' . $item["title"] . '</h2>
         <p>' . $item["description"] . '</p>
     </div>
     <div class="projectItemRight">
-        <img src="' . $item["image"] . '" alt="项目图标">
+        <img src="' . $item["image"] . '" alt="网站列表图标">
     </div>
-    <!-- 项目项结束 -->
+    <!-- 网站列表结束 -->
 </a>';
                 }
                 ?>

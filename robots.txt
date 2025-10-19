@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /
 Allow: /index.php
+Sitemap: https://ksmlc.cn/sitemap.xml

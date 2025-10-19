@@ -10,7 +10,7 @@ This is the complete source code of my personal homepage ksmlc.cn, written in **
 - 🎉 Festival countdown lantern animation
 - 🔗 Project showcase, external links and friend links
 
-<img width="1509" height="940" alt="PixPin_2025-08-08_09-42-46" src="https://github.com/user-attachments/assets/b43c203c-bf8b-43be-8c48-5036383ee23f" />
+<img width="1496" height="932" alt="BgSub_PixPin_2025-10-06_23-05-07" src="https://github.com/user-attachments/assets/ec76ccf1-79ff-414b-a216-64597601409a" />
 
 ## 🌟 Technical Features
 
@@ -32,7 +32,6 @@ This project references the following excellent works:
 
 - Personal skills radar chart (based on JSON data)
 - Dynamic loading of project portfolio
-- Real-time weather component (PHP API integration)
 - Music player (with lyrics parsing)
 - Visitor counter and IP geographic information
 

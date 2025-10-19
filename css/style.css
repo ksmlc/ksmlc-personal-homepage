@@ -39,7 +39,6 @@ body.dark-theme {
         --icon-github-hover-color: var(--icon-github-hover-color-dark);
         --icon-mail-hover-color: var(--icon-mail-hover-color-dark);
         --icon-b-hover-color: var(--icon-b-hover-color-dark);
-        --icon-gitee-hover-color: var(--icon-gitee-hover-color-dark);
         --icon-抖音-hover-color: var(--icon-抖音-hover-color-dark);
         --icon-Telegram-hover-color: var(--icon-Telegram-hover-color-dark);
         --project-item-bg-color: var(--project-item-bg-color-dark);
@@ -67,7 +66,6 @@ body.blue-theme {
         --icon-github-hover-color: var(--icon-github-hover-color-blue);
         --icon-mail-hover-color: var(--icon-mail-hover-color-blue);
         --icon-b-hover-color: var(--icon-b-hover-color-blue);
-        --icon-gitee-hover-color: var(--icon-gitee-hover-color-blue);
         --icon-抖音-hover-color: var(--icon-抖音-hover-color-blue);
         --icon-Telegram-hover-color: var(--icon-Telegram-hover-color-blue);
         --project-item-bg-color: var(--project-item-bg-color-blue);
@@ -89,7 +87,7 @@ body.blue-theme {
         --gradient-start-dark: rgb(133, 62, 255);
         --gradient-middle-dark: #f76cc6 30%;
         --gradient-end-dark: rgb(255, 255, 255) 60%;
-        --purple-text-color-dark: #9567fb;
+        --purple-text-color-dark: #0B9682;
         --text-bg-color-dark: rgb(26, 4, 48);
         --icon-bg-color-dark: rgba(249, 250, 251, 0.6);
         --icon-wx-hover-color-dark: rgb(55, 178, 114);
@@ -97,7 +95,6 @@ body.blue-theme {
         --icon-github-hover-color-dark: rgb(68, 120, 241);
         --icon-mail-hover-color-dark: rgb(255, 193, 14);
         --icon-b-hover-color-dark: rgb(255, 88, 142);
-        --icon-gitee-hover-color-dark: #c71d23;
         --icon-抖音-hover-color-dark: #FE7BA4;
         --icon-Telegram-hover-color-dark: #1086C2;
         --project-item-bg-color-dark: #1F2025;
@@ -122,7 +119,7 @@ body.blue-theme {
         --gradient-start-blue: #9F365F;
         --gradient-middle-blue: #05BEA7;
         --gradient-end-blue: #0AB0D5;
-        --purple-text-color-blue: #0934E0;
+        --purple-text-color-blue: #333333;
         --text-bg-color-blue: rgba(255, 255, 255, 0.3);
         --icon-bg-color-blue: rgba(255, 255, 255, 0.4);
         --icon-wx-hover-color-blue: rgb(55, 178, 114);
@@ -130,7 +127,6 @@ body.blue-theme {
         --icon-github-hover-color-blue: rgb(68, 120, 241);
         --icon-mail-hover-color-blue: rgb(255, 193, 14);
         --icon-b-hover-color-blue: rgb(255, 88, 142);
-        --icon-gitee-hover-color-blue: #c71d23;
         --icon-抖音-hover-color-blue: #FE7BA4;
         --icon-Telegram-hover-color-blue: #1086C2;
         --project-item-bg-color-blue: rgba(249, 250, 251, 0.6);
@@ -168,147 +164,17 @@ body {
         }
 }
 
-body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: -1;
-        background-image: radial-gradient(3px 3px at 25px 35px, rgba(255, 255, 255, .4), transparent), radial-gradient(2px 2px at 45px 75px, rgba(255, 255, 255, .3), transparent), radial-gradient(1px 1px at 95px 45px, rgba(255, 255, 255, .5), transparent), radial-gradient(2px 2px at 135px 85px, rgba(255, 255, 255, .3), transparent), radial-gradient(1px 1px at 165px 35px, rgba(255, 255, 255, .4), transparent), radial-gradient(3px 3px at 185px 65px, rgba(255, 255, 255, .2), transparent), radial-gradient(1px 1px at 15px 95px, rgba(255, 255, 255, .6), transparent), radial-gradient(2px 2px at 55px 15px, rgba(255, 255, 255, .3), transparent), radial-gradient(1px 1px at 115px 105px, rgba(255, 255, 255, .4), transparent), radial-gradient(2px 2px at 175px 125px, rgba(255, 255, 255, .3), transparent);
-        background-repeat: repeat;
-        background-size: 200px 150px;
-        animation: sparkle 25s linear infinite
-}
 
-@keyframes sparkle {
-        0% {
-                transform: translateY(0)translateX(0);
-                opacity: 1
-        }
 
-        50% {
-                transform: translateY(-50px)translateX(10px);
-                opacity: .8
-        }
 
-        100% {
-                transform: translateY(-120px)translateX(-5px);
-                opacity: 0
-        }
-}
 
-body.dark-theme::before {
-        background-image: radial-gradient(2px 2px at 30px 40px, rgba(149, 103, 251, .6), transparent), radial-gradient(1px 1px at 70px 80px, rgba(247, 108, 198, .5), transparent), radial-gradient(3px 3px at 110px 50px, rgba(255, 255, 255, .4), transparent), radial-gradient(1px 1px at 150px 90px, rgba(149, 103, 251, .4), transparent), radial-gradient(2px 2px at 190px 40px, rgba(247, 108, 198, .3), transparent), radial-gradient(1px 1px at 20px 100px, rgba(255, 255, 255, .5), transparent), radial-gradient(2px 2px at 60px 20px, rgba(149, 103, 251, .5), transparent), radial-gradient(1px 1px at 120px 110px, rgba(247, 108, 198, .4), transparent), radial-gradient(3px 3px at 180px 130px, rgba(255, 255, 255, .3), transparent), radial-gradient(1px 1px at 10px 60px, rgba(149, 103, 251, .6), transparent)
-}
 
-body.blue-theme::before {
-        background-image: radial-gradient(2px 2px at 35px 45px, rgba(116, 185, 255, .5), transparent), radial-gradient(1px 1px at 75px 85px, rgba(255, 154, 162, .4), transparent), radial-gradient(2px 2px at 115px 55px, rgba(162, 155, 254, .45), transparent), radial-gradient(1px 1px at 155px 95px, rgba(255, 206, 84, .35), transparent), radial-gradient(2px 2px at 195px 45px, rgba(116, 185, 255, .4), transparent), radial-gradient(1px 1px at 25px 105px, rgba(255, 154, 162, .3), transparent), radial-gradient(2px 2px at 65px 25px, rgba(162, 155, 254, .4), transparent), radial-gradient(1px 1px at 125px 115px, rgba(255, 206, 84, .3), transparent), radial-gradient(2px 2px at 185px 135px, rgba(116, 185, 255, .35), transparent), radial-gradient(1px 1px at 15px 65px, rgba(255, 154, 162, .5), transparent)
-}
 
-body.dark-theme::after {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: -1;
-        background-image: radial-gradient(1px 1px at 25px 25px, rgba(149, 103, 251, .6), transparent), radial-gradient(1px 1px at 75px 75px, rgba(247, 108, 198, .4), transparent), radial-gradient(2px 2px at 125px 125px, rgba(149, 103, 251, .3), transparent);
-        background-repeat: repeat;
-        background-size: 150px 150px;
-        animation: float 25s ease-in-out infinite
-}
 
-@keyframes float {
 
-        0%,
-        100% {
-                transform: translateY(0)rotate(0);
-                opacity: .8
-        }
 
-        50% {
-                transform: translateY(-20px)rotate(180deg);
-                opacity: 1
-        }
-}
 
-body.blue-theme::after {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: -1;
-        background-image: radial-gradient(3px 3px at 35px 45px, rgba(159, 54, 95, .6), transparent), radial-gradient(2px 2px at 85px 85px, rgba(229, 80, 138, .5), transparent), radial-gradient(4px 4px at 135px 35px, rgba(5, 190, 167, .7), transparent), radial-gradient(2px 2px at 185px 85px, rgba(10, 176, 213, .5), transparent), radial-gradient(3px 3px at 35px 135px, rgba(158, 44, 253, .6), transparent), radial-gradient(1px 1px at 85px 35px, rgba(4, 129, 129, .4), transparent);
-        background-repeat: repeat;
-        background-size: 220px 180px;
-        animation: freshDance 16s ease-in-out infinite
-}
 
-@keyframes freshDance {
-        0% {
-                transform: translateX(0)translateY(0)scale(1)rotate(0);
-                opacity: .8;
-                filter: brightness(1)
-        }
-
-        25% {
-                transform: translateX(15px)translateY(-20px)scale(1.2)rotate(90deg);
-                opacity: 1;
-                filter: brightness(1.2)
-        }
-
-        50% {
-                transform: translateX(-10px)translateY(15px)scale(.8)rotate(180deg);
-                opacity: .9;
-                filter: brightness(.9)
-        }
-
-        75% {
-                transform: translateX(20px)translateY(-10px)scale(1.1)rotate(270deg);
-                opacity: .7;
-                filter: brightness(1.1)
-        }
-
-        100% {
-                transform: translateX(0)translateY(0)scale(1)rotate(360deg);
-                opacity: .8;
-                filter: brightness(1)
-        }
-}
-
-body.blue-theme {
-        position: relative
-}
-
-body.blue-theme::before {
-        background-image: radial-gradient(2px 2px at 40px 50px, rgba(159, 54, 95, .4), transparent), radial-gradient(1px 1px at 90px 90px, rgba(229, 80, 138, .3), transparent), radial-gradient(3px 3px at 140px 40px, rgba(5, 190, 167, .5), transparent), radial-gradient(2px 2px at 190px 90px, rgba(10, 176, 213, .4), transparent), radial-gradient(1px 1px at 40px 140px, rgba(158, 44, 253, .3), transparent), radial-gradient(2px 2px at 90px 40px, rgba(4, 129, 129, .4), transparent);
-        animation: sparkleFlow 22s linear infinite
-}
-
-@keyframes sparkleFlow {
-        0% {
-                transform: translateY(0)translateX(0)rotate(0);
-                opacity: 1
-        }
-
-        50% {
-                transform: translateY(-80px)translateX(20px)rotate(180deg);
-                opacity: .6
-        }
-
-        100% {
-                transform: translateY(-160px)translateX(-10px)rotate(360deg);
-                opacity: 0
-        }
-}
 
 body::-webkit-scrollbar {
         width: .2em
@@ -516,15 +382,10 @@ body::-webkit-scrollbar-track {
 
 .iconItem:nth-child(6):hover {
         transform: translateY(-3px);
-        background: var(--icon-gitee-hover-color) !important
-}
-
-.iconItem:nth-child(7):hover {
-        transform: translateY(-3px);
         background: var(--icon-抖音-hover-color) !important
 }
 
-.iconItem:nth-child(8):hover {
+.iconItem:nth-child(7):hover {
         transform: translateY(-3px);
         background: var(--icon-Telegram-hover-color) !important
 }
@@ -946,8 +807,65 @@ body::-webkit-scrollbar-track {
         transition: transform .6s cubic-bezier(.23, 1, .32, 1), background-color .4s ease, opacity .5s ease;
         position: relative;
         overflow: hidden;
-        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, .1))
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, .1));
+        cursor: pointer;
+        border: 2px solid transparent;
+        background-clip: padding-box;
 }
+
+
+
+/* 磁性吸附效果 */
+.projectItem.magnetic {
+        transition: transform .2s cubic-bezier(.23, 1, .32, 1), background-color .4s ease, opacity .5s ease;
+}
+
+/* 波浪动画效果 */
+.projectItem.wave-animate {
+        animation: waveIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes waveIn {
+        0% {
+                opacity: 0;
+                transform: translateY(50px) rotateX(15deg) scale(0.9);
+        }
+        60% {
+                opacity: 1;
+                transform: translateY(-10px) rotateX(0deg) scale(1.05);
+        }
+        100% {
+                opacity: 1;
+                transform: translateY(0) rotateX(0deg) scale(1);
+        }
+}
+
+/* 增强悬停效果 */
+.projectItem:hover {
+        transform: translateY(-8px) scale(1.03) rotateX(5deg) rotateZ(1deg);
+        background-color: var(--project-item-hover-color);
+        opacity: 1 !important;
+        box-shadow: 
+                0 15px 35px rgba(0, 0, 0, .2), 
+                inset 0 2px 4px rgba(255, 255, 255, .1);
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1.5);
+}
+
+/* 点击效果 */
+.projectItem:active {
+        transform: translateY(-4px) scale(0.98);
+        transition: transform 0.1s ease;
+}
+
+/* 为不同位置的卡片添加不同的动画延迟 */
+.projectItem:nth-child(1) { animation-delay: 0s; }
+.projectItem:nth-child(2) { animation-delay: 0.1s; }
+.projectItem:nth-child(3) { animation-delay: 0.2s; }
+.projectItem:nth-child(4) { animation-delay: 0.3s; }
+.projectItem:nth-child(5) { animation-delay: 0.4s; }
+.projectItem:nth-child(6) { animation-delay: 0.5s; }
+.projectItem:nth-child(7) { animation-delay: 0.6s; }
+.projectItem:nth-child(8) { animation-delay: 0.7s; }
 
 @media(max-width:1250px) {
         .projectItem {
@@ -962,7 +880,10 @@ body::-webkit-scrollbar-track {
 
 @media(max-width:580px) {
         .projectItem {
-                width: 100% !important
+                width: 100% !important;
+        }
+        .textBackground{
+                padding: 1px 10px !important;
         }
 }
 
@@ -1131,7 +1052,7 @@ footer::before {
 
 @media(max-width: 580px) {
         footer {
-                padding: 16px 20px;
+                padding: 8px 10px;
                 font-size: 13px;
                 margin-top: 25px;
                 border-radius: 12px
@@ -1171,8 +1092,13 @@ footer::before {
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* 亮色主题下悬浮歌词使用不透明背景 */
+body.blue-theme .floating-lyrics-content {
+        background: rgb(249, 250, 251);
+}
+
 .floating-lyrics-text {
-        color: rgba(255, 255, 255, 0.9);
+        color: var(--main-text-color);
         font-size: 16px;
         font-weight: 400;
         text-align: center;
@@ -1716,5 +1642,128 @@ footer::before {
         .popup-content {
                 margin: 20px;
                 padding: 15px
+        }
+}
+
+/* 自定义弹窗样式 */
+.custom-alert-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(5px);
+        z-index: 10000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+}
+
+.custom-alert-overlay.show {
+        opacity: 1;
+        visibility: visible;
+}
+
+.custom-alert-box {
+        background: var(--project-item-bg-color);
+        border: 1px solid var(--icon-bg-color);
+        border-radius: 16px;
+        padding: 30px;
+        min-width: 300px;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        transform: scale(0.7) translateY(-50px);
+        transition: all 0.3s ease;
+        color: var(--main-text-color);
+}
+
+.custom-alert-overlay.show .custom-alert-box {
+        transform: scale(1) translateY(0);
+}
+
+.custom-alert-icon {
+        font-size: 48px;
+        margin-bottom: 20px;
+        line-height: 1;
+}
+
+.custom-alert-box.success .custom-alert-icon {
+        color: #4CAF50;
+}
+
+.custom-alert-box.error .custom-alert-icon {
+        color: #f44336;
+}
+
+.custom-alert-box.warning .custom-alert-icon {
+        color: #ff9800;
+}
+
+.custom-alert-box.info .custom-alert-icon {
+        color: var(--purple-text-color);
+}
+
+.custom-alert-message {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        color: var(--main-text-color);
+}
+
+.custom-alert-close {
+        background: var(--purple-text-color);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 30px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        min-width: 80px;
+}
+
+.custom-alert-close:hover {
+        background: var(--gradient-start);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-alert-close:active {
+        transform: translateY(0);
+}
+
+/* 亮色主题下的弹窗样式 */
+body.blue-theme .custom-alert-box {
+        background: rgb(249, 250, 251);
+        border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.blue-theme .custom-alert-message {
+        color: #2c3e50;
+}
+
+/* 响应式设计 */
+@media (max-width: 480px) {
+        .custom-alert-box {
+                margin: 20px;
+                padding: 25px 20px;
+                min-width: auto;
+                max-width: calc(100% - 40px);
+        }
+        
+        .custom-alert-icon {
+                font-size: 36px;
+                margin-bottom: 15px;
+        }
+        
+        .custom-alert-message {
+                font-size: 15px;
+                margin-bottom: 20px;
         }
 }
