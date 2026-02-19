@@ -7,6 +7,21 @@ function toggleClass(selector, className) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    // 页面加载完成后隐藏加载动画
+    window.addEventListener('load', function() {
+        const loadingElement = document.getElementById('loading');
+        if (loadingElement) {
+            // 延迟500ms后开始淡出动画
+            setTimeout(function() {
+                loadingElement.classList.add('hide');
+                // 动画结束后彻底隐藏元素
+                setTimeout(function() {
+                    loadingElement.style.display = 'none';
+                }, 300); // 等待CSS transition完成
+            }, 500);
+        }
+    });
+
     var themeState = getCookie("themeState") || "Blue";
     function changeTheme(theme) {
         if (theme == "Dark") {
@@ -169,19 +184,7 @@ document.querySelectorAll('.friend-link.no-link').forEach(function(element) {
     });
 });
 
-//双击ip地址跳转查询
-document.addEventListener('DOMContentLoaded', function() {
-    var ipAddressElement = document.getElementById('ipAddress');
 
-    // 添加双击事件监听器
-    ipAddressElement.addEventListener('dblclick', function() {
-        var ipAddress = ipAddressElement.innerText.trim();
-        // 构造跳转链接
-        var redirectUrl = 'https://ip.900cha.com/' + ipAddress + '.html';
-        // 在新窗口中打开链接
-        window.open(redirectUrl, '_blank');
-    });
-});
 
 // 赞助弹窗
 // function SponsorshipPopup() {

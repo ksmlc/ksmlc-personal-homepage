@@ -19,44 +19,60 @@
     "快手": {
       "icon": "images/icon/快手.svg",
       "url": "https://v.kuaishou.com/8Pedqq"
+    },
+    "Telegram": {
+      "icon": "images/icon/Telegram.svg",
+      "url": "https://t.me/ksmlc"
     }
   },
   "WebSite": [
-    {
-      "url": "https://z.ksmlc.cn/",
-      "title": "KS-MLC|资源导航",
-      "description": "TwoNav网址导航",
-      "image": "./images/icon/zksmlccn.svg"
-    },
-    {
-      "url": "https://blog.ksmlc.cn/",
-      "title": "KS-MLC|Blog",
-      "description": "我的Blog",
-      "image": "./images/icon/typecho.svg"
-    },
-    {
-      "url": "https://alist.ksmlc.cn/",
-      "title": "KS-MLC|Alist",
-      "description": "Alist网盘",
-      "image": "./images/icon/alist.svg"
-    },
-    {
-      "url": "https://cloud.ksmlc.cn/",
-      "title": "KS-MLC|Cloudreve",
-      "description": "Cloudreve网盘",
-      "image": "./images/icon/cloudreve.png"
-    }
-  ],
+  {
+    "url": "https://z.ksmlc.cn/",
+    "title": "KS-MLC|网址导航",
+    "description": "Website Navigation",
+    "image": "./images/icon/zksmlccn.svg"
+  },
+  {
+    "url": "https://blog.ksmlc.cn/",
+    "title": "KS-MLC|Blog",
+    "description": "My Blog",
+    "image": "./images/icon/typecho.svg"
+  },
+  {
+    "url": "https://alist.ksmlc.cn/",
+    "title": "KS-MLC|Alist",
+    "description": "My Private Alist",
+    "image": "./images/icon/alist.svg"
+  },
+  {
+    "url": "https://cloud.ksmlc.cn/",
+    "title": "KS-MLC|Cloudreve",
+    "description": "My Cloudreve Cloud Drive",
+    "image": "./images/icon/cloudreve.png"
+  },
+  {
+    "url": "https://nz.520301.xyz/",
+    "title": "KS-MLC|哪吒监控",
+    "description": "Nezha Monitoring",
+    "image": "https://nz.520301.xyz/apple-touch-icon.png"
+  },
+  {
+    "url": "https://photo.ksmlc.cn/",
+    "title": "Album Gallery",
+    "description": "ksmlc's Album Gallery",
+    "image": "./images/icon/chronoframe.ico"
+  }
+],
   "Projects": [
     {
-      "url": "https://z.ksmlc.cn/?c=click&id=534",
+      "url": "https://github.com/KSMLC/TyporaThemeKeepStyle/releases",
       "title": "Typora-KeepStyle",
-      "description": "为Typora编写的主题",
+      "description": "Typora主题",
       "image": "./images/icon/typora.png"
     },{
       "url": "https://z.ksmlc.cn/?c=click&id=837",
       "title": "GreenLumaPro",
-      "description": "Steam游戏解锁工具",
+      "description": "Steam解锁工具",
       "image": "./images/icon/GreenLumaProGUI.svg"
     },{
       "url": "https://z.ksmlc.cn/?c=click&id=988",
@@ -66,8 +82,13 @@
     },{
       "url": "https://github.com/ksmlc/ksmlc-personal-homepage",
       "title": "KS-MLC|个人主页",
-      "description": "本站点的源码现已开源",
+      "description": "本站点的开源代码",
       "image": "./images/ksmlc.png"
+    },{
+      "url": "https://github.com/HoshinoSuzumi/chronoframe",
+      "title": "Chronoframe",
+      "description": "参与的开源项目：相册画廊",
+      "image": "./images/icon/chronoframe.ico"
     }
   ],
   "friend": [

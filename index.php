@@ -29,11 +29,18 @@
 <!--    <link rel="manifest" href="./manifest.json">-->
 </head>
 <script src="js/jiami.js"></script>
-<script src="./js/music.js"></script>
-<body>
+  <script src="./js/music.js"></script>
+  <body>
 <h1 style="display: none;">KS-MLC|个人主页 - Hello, I'm ksmlc, A full-stack developer who loves Python development, writing down my passion in the form of code!</h1>
 <style>
-    .deng-box{position:fixed;top:-40px;right:-20px;z-index:99;pointer-events:none}.deng-box1{position:fixed;top:-30px;right:10px;z-index:99;pointer-events:none}.deng-box2{position:fixed;top:-40px;left:-20px;z-index:99;pointer-events:none}.deng-box3{position:fixed;top:-30px;left:10px;z-index:99;pointer-events:none}.deng-box1 .deng,.deng-box3 .deng{position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,.8);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 5s infinite ease-in-out;box-shadow:-5px 5px 30px 4px #fc903d}.deng{position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,.8);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 3s infinite ease-in-out;box-shadow:-5px 5px 50px 4px #fa6c00}.deng-a{width:100px;height:90px;background:#d8000f;background:rgba(216,0,15,.1);margin:12px 8px 8px;border-radius:50% 50%;border:2px solid #dc8f03}.deng-b{width:45px;height:90px;background:#d8000f;background:rgba(216,0,15,.1);margin:-4px 8px 8px 26px;border-radius:50% 50%;border:2px solid #dc8f03}.xian{position:absolute;top:-20px;left:60px;width:2px;height:20px;background:#dc8f03}.shui-a{position:relative;width:5px;height:20px;margin:-5px 0 0 59px;-webkit-animation:swing 4s infinite ease-in-out;-webkit-transform-origin:50% -45px;background:orange;border-radius:0 0 5px 5px}.shui-b{position:absolute;top:14px;left:-2px;width:10px;height:10px;background:#dc8f03;border-radius:50%}.shui-c{position:absolute;top:18px;left:-2px;width:10px;height:35px;background:orange;border-radius:0 0 0 5px}.deng:before{position:absolute;top:-7px;left:29px;height:12px;width:60px;content:" ";display:block;z-index:999;border-radius:5px 5px 0 0;border:solid 1px #dc8f03;background:orange;background:linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng:after{position:absolute;bottom:-7px;left:10px;height:12px;width:60px;content:" ";display:block;margin-left:20px;border-radius:0 0 5px 5px;border:solid 1px #dc8f03;background:orange;background:linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng-t{font-family:华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;font-size:3.2rem;color:#dc8f03;font-weight:700;line-height:85px;text-align:center}.night .deng-box,.night .deng-box1,.night .deng-t{background:0 0!important}@-moz-keyframes swing{0%{-moz-transform:rotate(-10deg)}50%{-moz-transform:rotate(10deg)}100%{-moz-transform:rotate(-10deg)}}@-webkit-keyframes swing{0%{-webkit-transform:rotate(-10deg)}50%{-webkit-transform:rotate(10deg)}100%{-webkit-transform:rotate(-10deg)}}@media(max-width:600px){#container{display:none}}
+    .deng-box{position:fixed;top:-40px;right:-20px;z-index:99;pointer-events:none}.deng-box1{position:fixed;top:-30px;right:10px;z-index:99;pointer-events:none}.deng-box2{position:fixed;top:-40px;left:-20px;z-index:99;pointer-events:none}.deng-box3{position:fixed;top:-30px;left:10px;z-index:99;pointer-events:none}.deng-box1 .deng,.deng-box3 .deng{position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,.8);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 5s infinite ease-in-out;box-shadow:-5px 5px 30px 4px #fc903d}.deng{position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,.8);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 3s infinite ease-in-out;box-shadow:-5px 5px 50px 4px #fa6c00}.deng-a{width:100px;height:90px;background:#d8000f;background:rgba(216,0,15,.1);margin:12px 8px 8px;border-radius:50% 50%;border:2px solid #dc8f03}.deng-b{width:45px;height:90px;background:#d8000f;background:rgba(216,0,15,.1);margin:-4px 8px 8px 26px;border-radius:50% 50%;border:2px solid #dc8f03}.xian{position:absolute;top:-20px;left:60px;width:2px;height:20px;background:#dc8f03}.shui-a{position:relative;width:5px;height:20px;margin:-5px 0 0 59px;-webkit-animation:swing 4s infinite ease-in-out;-webkit-transform-origin:50% -45px;background:orange;border-radius:0 0 5px 5px}.shui-b{position:absolute;top:14px;left:-2px;width:10px;height:10px;background:#dc8f03;border-radius:50%}.shui-c{position:absolute;top:18px;left:-2px;width:10px;height:35px;background:orange;border-radius:0 0 0 5px}.deng:before{position:absolute;top:-7px;left:29px;height:12px;width:60px;content:" ";display:block;z-index:999;border-radius:5px 5px 0 0;border:solid 1px #dc8f03;background:orange;background:linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng:after{position:absolute;bottom:-7px;left:10px;height:12px;width:60px;content:" ";display:block;margin-left:20px;border-radius:0 0 5px 5px;border:solid 1px #dc8f03;background:orange;background:linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng-t{font-family:华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;font-size:3.5rem;color:#dc8f03;font-weight:700;line-height:85px;text-align:center}.night .deng-t,.night .shui-a,.night .shui-c{background:orange!important}.night .deng-a,.night .deng-b,.night .deng-box1 .deng,.night .deng-box3 .deng,.night .deng{background:#d8000f!important;box-shadow:-5px 5px 30px 4px #fc903d!important}@-webkit-keyframes swing{0%{-webkit-transform:rotate(-10deg)}50%{-webkit-transform:rotate(10deg)}100%{-webkit-transform:rotate(-10deg)}}
+
+    /* 移动端隐藏灯笼 */
+    @media (max-width: 768px) {
+        .deng-box, .deng-box1, .deng-box2, .deng-box3 {
+            display: none !important;
+        }
+    }
 </style>
 <!--灯笼-->
 <div id="container"></div>
@@ -52,14 +59,8 @@
         if (currentMonth === 12 && currentDate === 24) {
             return "岁岁平安";
         }
-        if (currentMonth === 2 && currentDate === 21) {
-            return "生日快乐";
-        }
         if (currentMonth === 10 && currentDate === 1) {
             return "国庆快乐";
-        }
-        if (currentMonth === 10 && currentDate === 24) {
-            return "1024";
         }
         // 以下为不固定日期的事件
         if (currentMonth === 9 && currentDate === 25) {
@@ -108,16 +109,12 @@
                 consoleMessage = "祝大家新年快乐！";
             } else if (displayText === "岁岁平安") {
                 consoleMessage = "岁岁平 岁岁安 岁岁平安，年年岁岁 岁岁年年 平平安安！";
-            } else if (displayText === "生日快乐") {
-                consoleMessage = "祝自己生日快乐！";
             } else if (displayText === "国庆快乐") {
                 consoleMessage = "大家国庆快乐！";
             } else if (displayText === "中秋快乐") {
                 consoleMessage = "水中有明月，碎碎圆圆；心中有良人，平平安安。";
             } else if (displayText === "除夕快乐") {
                 consoleMessage = "愿大家在除夕，平安喜乐！";
-            } else if (displayText === "1024") {
-                consoleMessage = "祝所有程序员节日快乐！没有bug，代码永无报错！";
             } else {
                 consoleMessage = "愿大家心境，四季如春！";
             }
@@ -161,7 +158,7 @@
                     foreach ($skills_to_display as $skill) :
                         ?>
                         <div class="circle">
-                            <a href="javascript:void(0)" onclick="handleSkillClick('<?php echo addslashes($skill); ?>')" target="_blank" rel="noopener noreferrer">
+                            <a href="javascript:void(0)" onclick="handleSkillClick('<?php echo addslashes($skill); ?>')" rel="noopener noreferrer">
                                 <span><?php echo $skill; ?></span>
                             </a>
                         </div>
@@ -477,7 +474,7 @@
                             <p class="lyrics-line" id="lyrics-line"></p>
                         </div>
                         <div class="controls">
-                            <button id="chart-list-btn"><img src="./images/icon/音乐歌单.svg" alt="歌单"></button>
+                            <button id="play-mode-btn" title="列表循环"><img id="play-mode-icon" src="./images/icon/循环播放.svg" alt="模式"></button>
                             <button id="view-songs-btn"><img src="./images/icon/音乐列表.svg" alt="音乐"></button>
                             <button id="prev-btn"><img src="./images/icon/音乐后退.svg" alt="上一首"></button>
                             <button id="play-pause-btn"><img src="./images/icon/音乐播放.svg" alt="播放"></button>
@@ -487,18 +484,20 @@
                     </div>
                 </div>
 
-                <div id="chart-modal" class="chart-modal">
-                    <div class="chart-modal-content">
-                        <span class="close">&times;</span>
-                        <h2>选择音乐歌单</h2>
-                        <div id="playlist-buttons-container"></div> 
-                    </div>
-                </div>
-
                 <div id="songs-modal" class="chart-modal">
                     <div class="chart-modal-content">
                         <span class="close">&times;</span>
                         <h2>音乐列表</h2>
+                        <div class="modal-controls-container">
+                            <div class="playlist-select-container">
+                                <select id="playlist-selector">
+                                    <option value="" disabled selected>选择歌单...</option>
+                                </select>
+                            </div>
+                            <div class="search-container">
+                                <input type="text" id="song-search-input" placeholder="搜索歌曲名称">
+                            </div>
+                        </div>
                         <ul id="songs-list"></ul>
                     </div>
                 </div>
@@ -509,6 +508,7 @@
         <!-- 悬浮歌词显示 -->
         <div id="floating-lyrics" class="floating-lyrics">
             <div class="floating-lyrics-content">
+                <canvas id="audio-visualizer" class="audio-visualizer"></canvas>
                 <div class="floating-lyrics-text" id="floating-lyrics-text">暂无歌词</div>
                 <div class="floating-lyrics-controls">
                     <button id="floating-lyrics-close" class="floating-lyrics-close">&times;</button>
@@ -526,6 +526,7 @@
                 <?php
                 // 处理项目的 JSON 数据
                 $projectItems = $data['WebSite'];
+                // 生成更多项目项的 HTML 代码
                 foreach ($projectItems as $item) {
                     echo '<a class="projectItem" target="_blank" href="' . $item["url"] . '">
     <!-- 网站列表开始 -->
@@ -615,16 +616,16 @@
             </div>
         </content>
     </div>
-</div>
+</main>
     <!-- 模态框容器 -->
     <div id="popup" class="popup" onclick="hidePopup()">
         <div class="popup-content" onclick="event.stopPropagation()">
             <span class="close" onclick="hidePopup()">&times;</span>
-            <img id="popup-img" class="popup-img" src="" alt="模态框图片">
+            <img id="popup-img" class="popup-img" src="" alt="微信或QQ二维码图片">
         </div>
     </div>
 </div>
-<footer>Copyright © 2024-2025 Website source code developed by KS-MLC.</footer>
+<footer role="contentinfo">Copyright © 2023-2026 Website source code developed by ksmlc.<br><a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer"><img src="https://ksmlc.cn/images/icon/ICP备案.ico" alt="备案图标" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">桂ICP备2025078585号-1</a></footer>
 </body>
 <script src="js/mouse.js"></script>
 <script src="./js/time.js"></script>

@@ -34,13 +34,14 @@ body.dark-theme {
         --purple-text-color: var(--purple-text-color-dark);
         --text-bg-color: var(--text-bg-color-dark);
         --icon-bg-color: var(--icon-bg-color-dark);
-        --icon-wx-hover-color: var(--icon-wx-hover-color-dark);
-        --icon-qq-hover-color: var(--icon-qq-hover-color-dark);
-        --icon-github-hover-color: var(--icon-github-hover-color-dark);
-        --icon-mail-hover-color: var(--icon-mail-hover-color-dark);
-        --icon-b-hover-color: var(--icon-b-hover-color-dark);
-        --icon-抖音-hover-color: var(--icon-抖音-hover-color-dark);
-        --icon-Telegram-hover-color: var(--icon-Telegram-hover-color-dark);
+        --icon-wx-hover-color: var(--icon-wx-hover);
+        --icon-qq-hover-color: var(--icon-qq-hover);
+        --icon-github-hover-color: var(--icon-github-hover);
+        --icon-mail-hover-color: var(--icon-mail-hover);
+        --icon-b-hover-color: var(--icon-b-hover);
+        --icon-抖音-hover-color: var(--icon-抖音-hover);
+        --icon-Telegram-hover-color: var(--icon-Telegram-hover);
+        --icon-kuaishou-hover-color: var(--icon-kuaishou-hover);
         --project-item-bg-color: var(--project-item-bg-color-dark);
         --project-item-hover-color: var(--project-item-hover-color-dark);
         --project-item-left-title-color: var(--project-item-left-title-color-dark);
@@ -61,13 +62,14 @@ body.blue-theme {
         --purple-text-color: var(--purple-text-color-blue);
         --text-bg-color: var(--text-bg-color-blue);
         --icon-bg-color: var(--icon-bg-color-blue);
-        --icon-wx-hover-color: var(--icon-wx-hover-color-blue);
-        --icon-qq-hover-color: var(--icon-qq-hover-color-blue);
-        --icon-github-hover-color: var(--icon-github-hover-color-blue);
-        --icon-mail-hover-color: var(--icon-mail-hover-color-blue);
-        --icon-b-hover-color: var(--icon-b-hover-color-blue);
-        --icon-抖音-hover-color: var(--icon-抖音-hover-color-blue);
-        --icon-Telegram-hover-color: var(--icon-Telegram-hover-color-blue);
+        --icon-wx-hover-color: var(--icon-wx-hover);
+        --icon-qq-hover-color: var(--icon-qq-hover);
+        --icon-github-hover-color: var(--icon-github-hover);
+        --icon-mail-hover-color: var(--icon-mail-hover);
+        --icon-b-hover-color: var(--icon-b-hover);
+        --icon-抖音-hover-color: var(--icon-抖音-hover);
+        --icon-Telegram-hover-color: var(--icon-Telegram-hover);
+        --icon-kuaishou-hover-color: var(--icon-kuaishou-hover);
         --project-item-bg-color: var(--project-item-bg-color-blue);
         --project-item-hover-color: var(--project-item-hover-color-blue);
         --project-item-left-title-color: var(--project-item-left-title-color-blue);
@@ -79,6 +81,17 @@ body.blue-theme {
 }
 
 :root {
+        /* 公共hover颜色 - 所有主题共用 */
+        --icon-wx-hover: rgb(55, 178, 114);
+        --icon-qq-hover: #12B7F5;
+        --icon-github-hover: #ffffff;
+        --icon-mail-hover: #EA4335;
+        --icon-b-hover: #ff97b5;
+        --icon-抖音-hover: #000000;
+        --icon-kuaishou-hover: #FF4500;
+        --icon-Telegram-hover: #1086C2;
+
+        /* 暗色主题变量 */
         --main-bg-color-dark: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.15) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%),
@@ -90,13 +103,6 @@ body.blue-theme {
         --purple-text-color-dark: #0B9682;
         --text-bg-color-dark: rgb(26, 4, 48);
         --icon-bg-color-dark: rgba(249, 250, 251, 0.6);
-        --icon-wx-hover-color-dark: rgb(55, 178, 114);
-        --icon-qq-hover-color-dark: rgb(201, 13, 0);
-        --icon-github-hover-color-dark: rgb(68, 120, 241);
-        --icon-mail-hover-color-dark: rgb(255, 193, 14);
-        --icon-b-hover-color-dark: rgb(255, 88, 142);
-        --icon-抖音-hover-color-dark: #FE7BA4;
-        --icon-Telegram-hover-color-dark: #1086C2;
         --project-item-bg-color-dark: #1F2025;
         --project-item-hover-color-dark: rgb(19, 23, 27);
         --project-item-left-title-color-dark: rgb(255, 255, 255);
@@ -105,38 +111,28 @@ body.blue-theme {
         --footer-text-bg-color-dark: rgba(27, 29, 31);
         --card_identity_span_color-dark: #fff;
         --card_skill_circle_bg_color-dark: #131418;
-        --music-text-color-dark: #fff
-}
+        --music-text-color-dark: #fff;
 
-:root {
-        --main-bg-color-blue: radial-gradient(circle at 25% 25%, rgba(159, 54, 95, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(229, 80, 138, 0.25) 0%, transparent 45%),
-                radial-gradient(circle at 50% 10%, rgba(5, 190, 167, 0.35) 0%, transparent 50%),
-                radial-gradient(circle at 20% 80%, rgba(10, 176, 213, 0.25) 0%, transparent 45%),
-                radial-gradient(circle at 80% 20%, rgba(158, 44, 253, 0.3) 0%, transparent 48%),
-                linear-gradient(135deg, #9F365F 0%, #ec74a2 25%, #05BEA7 50%, #048181 75%, #0AB0D5 100%);
-        --main-text-color-blue: #2c3e50;
-        --gradient-start-blue: #9F365F;
-        --gradient-middle-blue: #05BEA7;
-        --gradient-end-blue: #0AB0D5;
-        --purple-text-color-blue: #333333;
-        --text-bg-color-blue: rgba(255, 255, 255, 0.3);
-        --icon-bg-color-blue: rgba(255, 255, 255, 0.4);
-        --icon-wx-hover-color-blue: rgb(55, 178, 114);
-        --icon-qq-hover-color-blue: rgb(201, 13, 0);
-        --icon-github-hover-color-blue: rgb(68, 120, 241);
-        --icon-mail-hover-color-blue: rgb(255, 193, 14);
-        --icon-b-hover-color-blue: rgb(255, 88, 142);
-        --icon-抖音-hover-color-blue: #FE7BA4;
-        --icon-Telegram-hover-color-blue: #1086C2;
-        --project-item-bg-color-blue: rgba(249, 250, 251, 0.6);
-        --project-item-hover-color-blue: rgba(240, 241, 241, 0.6);
-        --project-item-left-title-color-blue: #000000;
-        --project-item-left-text-color-blue: #5d5757;
-        --footer-text-bg-color-blue: rgba(187, 181, 181, 0.28);
-        --card_identity_span_color-blue: #000;
-        --card_skill_circle_bg_color-blue: #fff;
-        --music-text-color-blue: #000
+        /* 亮色主题变量 */
+        --main-bg-color-blue: 
+  radial-gradient(circle at 20% 80%, rgba(53, 157, 104, 0.25) 0%, transparent 50%),
+  radial-gradient(circle at 80% 20%, rgba(111, 173, 225, 0.2) 0%, transparent 50%),
+  linear-gradient(135deg, #359d68 0%, #4fac9a 33%, #5fbad0 66%, #6fade1 100%);
+        --main-text-color-blue: #eaeaea;
+        --gradient-start-blue: #f4d1b4;
+        --gradient-middle-blue: #ff4500;
+        --gradient-end-blue: #f4d1b4;
+        --purple-text-color-blue: #f4d1b4;
+        --text-bg-color-blue: rgba(0, 0, 0, 0.4);
+        --icon-bg-color-blue: rgba(255, 255, 255, 0.2);
+        --project-item-bg-color-blue: rgba(0, 0, 0, 0.3);
+        --project-item-hover-color-blue: rgba(0, 0, 0, 0.5);
+        --project-item-left-title-color-blue: #ffffff;
+        --project-item-left-text-color-blue: #eeeeee;
+        --footer-text-bg-color-blue: rgba(0, 0, 0, 0.2);
+        --card_identity_span_color-blue: #ffffff;
+        --card_skill_circle_bg_color-blue: rgba(255, 255, 255, 0.1);
+        --music-text-color-blue: #ffffff
 }
 
 body {
@@ -163,18 +159,6 @@ body {
                 background-position: 0
         }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 body::-webkit-scrollbar {
         width: .2em
@@ -233,8 +217,8 @@ body::-webkit-scrollbar-track {
         background: linear-gradient(135deg, 
                 var(--purple-text-color) 0%, 
                 #ff6b9d 25%, 
-                #b64fea 50%, 
-                #dc4403 75%, 
+                #cf6fff 50%, 
+                #ffa179 75%, 
                 var(--purple-text-color) 100%);
         background-size: 300% 300%;
         -webkit-background-clip: text;
@@ -384,8 +368,12 @@ body::-webkit-scrollbar-track {
         transform: translateY(-3px);
         background: var(--icon-抖音-hover-color) !important
 }
-
 .iconItem:nth-child(7):hover {
+        transform: translateY(-3px);
+        background: var(--icon-kuaishou-hover-color) !important
+}
+
+.iconItem:nth-child(8):hover {
         transform: translateY(-3px);
         background: var(--icon-Telegram-hover-color) !important
 }
@@ -489,7 +477,10 @@ body::-webkit-scrollbar-track {
 .controls>button>img {
         max-width: 17px;
         max-height: 17px;
-        margin-right: 0
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 #music-title,
@@ -513,189 +504,234 @@ body::-webkit-scrollbar-track {
 .chart-modal {
         display: none;
         position: fixed;
-        z-index: 100;
+        z-index: 2000;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        overflow: auto;
-        background: rgba(0, 0, 0, 0.7);
-        animation: modalFadeIn .3s ease
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        animation: modalFadeIn .4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .chart-modal-content {
         background: var(--project-item-bg-color);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        margin: 5% auto;
-        padding: 25px;
+        margin: 8vh auto;
+        padding: 30px;
         width: 90%;
-        max-width: 500px;
-        max-height: 75vh;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        max-width: 550px;
+        max-height: 80vh;
+        border-radius: 24px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         position: relative;
-        animation: modalSlideIn .3s ease-out;
-        overflow-y: auto
+        animation: modalSlideIn .4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        display: flex;
+        flex-direction: column;
+}
+
+body.blue-theme .chart-modal-content {
+        background: rgba(255, 255, 255, 0.7);
+        border-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
 
 .chart-modal-content .close {
         position: absolute;
-        top: 15px;
+        top: 20px;
         right: 20px;
-        font-size: 22px;
-        font-weight: 300;
+        font-size: 20px;
         color: var(--main-text-color);
         cursor: pointer;
-        transition: color .2s ease;
-        width: 28px;
-        height: 28px;
+        transition: all .3s ease;
+        width: 32px;
+        height: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background: var(--icon-bg-color);
+        background: rgba(255, 255, 255, 0.1);
+        z-index: 10;
+}
+
+body.blue-theme .chart-modal-content .close {
+        color: #333;
+        background: rgba(0, 0, 0, 0.05);
 }
 
 .chart-modal-content .close:hover {
         background: var(--purple-text-color);
+        transform: rotate(90deg);
+        color: #fff;
+}
+
+body.blue-theme .chart-modal-content .close:hover {
+        background: rgba(0, 0, 0, 0.8);
         color: #fff;
 }
 
 .chart-modal-content h2 {
-        font-size: 24px;
-        margin-bottom: 25px;
-        color: rgba(255, 255, 255, 0.9);
-        text-align: center;
-        font-weight: 500;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3)
-}
-
-#playlist-buttons-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-        max-height: 400px;
-        overflow-y: auto;
-        padding-right: 10px
-}
-
-#playlist-buttons-container::-webkit-scrollbar {
-        width: 6px
-}
-
-#playlist-buttons-container::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px
-}
-
-#playlist-buttons-container::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 10px;
-        border: 2px solid transparent;
-        background-clip: padding-box
-}
-
-#playlist-buttons-container::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.4);
-        background-clip: padding-box
-}
-
-.chart-btn {
-        padding: 14px 18px;
-        margin: 0;
-        background: var(--icon-bg-color);
+        font-size: 22px;
+        margin-bottom: 20px;
         color: var(--main-text-color);
-        border: 1px solid var(--icon-bg-color);
+        text-align: left;
+        font-weight: 600;
+        padding-left: 10px;
+        border-left: 4px solid var(--purple-text-color);
+}
+
+body.blue-theme .chart-modal-content h2 {
+        border-left-color: #666;
+        color: #222;
+}
+
+.modal-controls-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+}
+
+.playlist-select-container, .search-container {
+        width: 100%;
+}
+
+.search-container {
+        margin-bottom: 0;
+        padding: 0;
+}
+
+#playlist-selector, #song-search-input {
+        width: 100%;
+        padding: 12px 18px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 12px;
+        color: var(--main-text-color);
+        font-size: 14px;
+        outline: none;
+        transition: all 0.3s ease;
+        appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+}
+
+#playlist-selector {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='white' d='M1 4l5 5 5-5z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 18px center;
+        padding-right: 40px;
+}
+
+body.blue-theme #playlist-selector {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='black' d='M1 4l5 5 5-5z'/%3E%3C/svg%3E");
+        background-color: rgba(0, 0, 0, 0.03);
+        border-color: rgba(0, 0, 0, 0.1);
+        color: #333;
+}
+
+#playlist-selector:focus, #song-search-input:focus {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: var(--purple-text-color);
+        box-shadow: 0 0 0 3px rgba(var(--purple-text-color-rgb), 0.1);
+}
+
+body.blue-theme #playlist-selector:focus, body.blue-theme #song-search-input:focus {
+        background: rgba(255, 255, 255, 0.9);
+        border-color: #666;
+}
+
+#playlist-selector option {
+        background: #1a1a2e;
+        color: #fff;
+}
+
+body.blue-theme #playlist-selector option {
+        background: #fff;
+        color: #333;
+}
+
+#songs-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        overflow-y: auto;
+        padding: 5px 10px 5px 5px;
+        flex: 1;
+}
+
+#songs-list::-webkit-scrollbar {
+        width: 5px;
+}
+
+#songs-list::-webkit-scrollbar-track {
+        background: transparent;
+}
+
+#songs-list::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+}
+
+body.blue-theme #songs-list::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.1);
+}
+
+#songs-list li {
+        padding: 16px 20px;
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--main-text-color);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
         cursor: pointer;
         width: 100%;
         text-align: left;
         font-size: 15px;
-        font-weight: 400;
-        transition: background-color .2s ease, color .2s ease;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.chart-btn:hover {
-        background: var(--purple-text-color);
-        color: #fff;
-        border-color: var(--purple-text-color);
-}
-
-.chart-btn:active {
-        background: var(--icon-bg-color);
-        color: var(--main-text-color);
-}
-
-#songs-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        max-height: 450px;
-        overflow-y: auto;
-        padding-right: 10px
-}
-
-#songs-list::-webkit-scrollbar {
-        width: 6px
-}
-
-#songs-list::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px
-}
-
-#songs-list::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 10px;
-        border: 2px solid transparent;
-        background-clip: padding-box
-}
-
-#songs-list::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.4);
-        background-clip: padding-box
-}
-
-#songs-list li {
-        padding: 14px 18px;
-        margin: 6px 0;
-        background: var(--icon-bg-color);
-        border: 1px solid var(--icon-bg-color);
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: 400;
-        color: var(--main-text-color);
-        transition: background-color .2s ease, color .2s ease;
+        transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        position: relative;
 }
 
-#songs-list li::after {
-        content: '♪';
-        font-size: 14px;
-        color: var(--purple-text-color);
-        opacity: 0;
-        transition: opacity .2s ease;
+body.blue-theme #songs-list li {
+        background: rgba(255, 255, 255, 0.4);
+        border-color: rgba(255, 255, 255, 0.5);
+        color: #333;
 }
 
 #songs-list li:hover {
-        background: var(--purple-text-color);
-        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
         border-color: var(--purple-text-color);
+}
+
+body.blue-theme #songs-list li:hover {
+        background: rgba(255, 255, 255, 0.8);
+        border-color: #999;
+        color: #000;
+}
+
+#songs-list li::after {
+        content: '▶';
+        font-size: 12px;
+        color: var(--purple-text-color);
+        position: absolute;
+        right: 20px;
+        opacity: 0;
+        transition: all 0.3s ease;
 }
 
 #songs-list li:hover::after {
         opacity: 1;
-        color: #fff;
 }
 
-#songs-list li:active {
-        background: var(--icon-bg-color);
-        color: var(--main-text-color);
+body.blue-theme #songs-list li:hover::after {
+        color: #000;
 }
 
 @keyframes modalFadeIn {
@@ -725,12 +761,7 @@ body::-webkit-scrollbar-track {
                 max-height: 70vh
         }
         
-        #playlist-buttons-container {
-                grid-template-columns: 1fr;
-                gap: 12px
-        }
-        
-        .chart-btn, #songs-list li {
+        #songs-list li {
                 padding: 14px 16px;
                 font-size: 15px
         }
@@ -879,11 +910,21 @@ body::-webkit-scrollbar-track {
 }
 
 @media(max-width:580px) {
-        .projectItem {
-                width: 100% !important;
+        .flip {
+                width: 40px;
+                height: 60px;
+                font-size: 45px;
+                line-height: 60px;
         }
-        .textBackground{
-                padding: 1px 10px !important;
+        
+        .divider {
+                font-size: 30px;
+                line-height: 60px;
+        }
+
+        .clock {
+                gap: 5px;
+                transform: scale(0.9);
         }
 }
 
@@ -1090,14 +1131,30 @@ footer::before {
         align-items: center;
         justify-content: space-between;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
 }
 
-/* 亮色主题下悬浮歌词使用不透明背景 */
+.audio-visualizer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.6;
+}
+
+/* 亮色主题下悬浮歌词使用更深色的背景以匹配红金主题 */
 body.blue-theme .floating-lyrics-content {
-        background: rgb(249, 250, 251);
+        background: rgba(0, 0, 0, 0.6);
+        border-color: rgba(255, 215, 0, 0.3);
 }
 
 .floating-lyrics-text {
+        position: relative;
+        z-index: 1;
         color: var(--main-text-color);
         font-size: 16px;
         font-weight: 400;
@@ -1169,17 +1226,21 @@ body.blue-theme .floating-lyrics-content {
         }
 }
 
-@media(max-width: 480px) {
+@media(max-width:580px) {
         .floating-lyrics-content {
-                padding: 12px 16px
+                padding: 10px 15px;
+                min-width: calc(100vw - 40px);
+                max-width: calc(100vw - 40px);
         }
-        
+
         .floating-lyrics-text {
-                font-size: 14px
+                font-size: 14px;
         }
-        
-        .floating-lyrics-controls {
-                margin-left: 12px
+
+        .popup-img {
+                width: 80vw;
+                height: auto;
+                max-height: 60vh;
         }
 }
 
@@ -1447,7 +1508,14 @@ body.blue-theme .floating-lyrics-content {
         height: 100%;
         background-color: rgba(255, 255, 255, .8);
         z-index: 9999;
-        backdrop-filter: blur(15px)
+        backdrop-filter: blur(15px);
+        opacity: 1;
+        transition: opacity 0.3s ease
+}
+
+#loading.hide {
+        opacity: 0;
+        pointer-events: none
 }
 
 .loader {
@@ -1510,6 +1578,10 @@ body.blue-theme .floating-lyrics-content {
 }
 
 @media(max-width:1100px) {
+        .main {
+                padding: 15px;
+        }
+
         .main-left {
                 display: none;
                 position: static
@@ -1517,6 +1589,47 @@ body.blue-theme .floating-lyrics-content {
 
         .main-right {
                 margin-left: 0 !important
+        }
+}
+
+@media(max-width:580px) {
+        .welcome {
+                font-size: 36px;
+                margin: 15px 0;
+        }
+
+        .description {
+                font-size: 16px;
+        }
+
+        .title {
+                font-size: 20px;
+                margin: 15px 0;
+        }
+
+        .projectList {
+                gap: 12px;
+                padding: 0;
+        }
+
+        .projectItem {
+                width: 100% !important;
+                padding: 15px;
+                height: auto;
+                min-height: 100px;
+        }
+
+        .projectItemLeft h2 {
+                font-size: 16px;
+        }
+
+        .projectItemLeft p {
+                font-size: 14px;
+        }
+
+        .textBackground {
+                padding: 2px 8px !important;
+                font-size: 15px;
         }
 }
 
