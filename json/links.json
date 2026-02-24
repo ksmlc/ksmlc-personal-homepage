@@ -28,32 +28,32 @@
   "WebSite": [
   {
     "url": "https://z.ksmlc.cn/",
-    "title": "KS-MLC|网址导航",
+    "title": "网址导航",
     "description": "Website Navigation",
     "image": "./images/icon/zksmlccn.svg"
   },
   {
     "url": "https://blog.ksmlc.cn/",
-    "title": "KS-MLC|Blog",
+    "title": "Blog",
     "description": "My Blog",
     "image": "./images/icon/typecho.svg"
   },
   {
     "url": "https://alist.ksmlc.cn/",
-    "title": "KS-MLC|Alist",
-    "description": "My Private Alist",
+    "title": "Openlist",
+    "description": "My Private Openlist",
     "image": "./images/icon/alist.svg"
   },
   {
     "url": "https://cloud.ksmlc.cn/",
-    "title": "KS-MLC|Cloudreve",
+    "title": "Cloudreve",
     "description": "My Cloudreve Cloud Drive",
     "image": "./images/icon/cloudreve.png"
   },
   {
     "url": "https://nz.520301.xyz/",
-    "title": "KS-MLC|哪吒监控",
-    "description": "Nezha Monitoring",
+    "title": "哪吒服务器监控",
+    "description": "Nezha Server Monitoring",
     "image": "https://nz.520301.xyz/apple-touch-icon.png"
   },
   {
@@ -81,14 +81,16 @@
       "image": "./images/icon/GreenLumaProGUI.svg"
     },{
       "url": "https://github.com/ksmlc/ksmlc-personal-homepage",
-      "title": "KS-MLC|个人主页",
+      "title": "个人主页",
       "description": "本站点的开源代码",
       "image": "./images/ksmlc.png"
-    },{
+    }],
+  "ContribProjects": [
+    {
       "url": "https://github.com/HoshinoSuzumi/chronoframe",
       "title": "Chronoframe",
-      "description": "参与的开源项目：相册画廊",
-      "image": "./images/icon/chronoframe.ico"
+      "description": "相册画廊",
+      "image": "./images/icon/github.svg"
     }
   ],
   "friend": [

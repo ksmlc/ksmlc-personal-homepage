@@ -544,7 +544,7 @@
             </div>
             <!-- 网站列表结束 -->
             <!--标题图标文字-->
-            <div class="title"><img src="images/icon/github.svg" alt="Projects Icon" width="22" height="22">
+            <div class="title"><img src="images/icon/code.svg" alt="Projects Icon" width="22" height="22">
                 <span class="Projects-description" ondblclick='toggleTranslation("Projects")'>Projects</span>
                 <span class="translated-Projects-description Projects-description Title_Hidden" ondblclick='toggleTranslation("Projects")'>项目</span></div>
             <!-- 项目列表开始 -->
@@ -553,6 +553,46 @@
                 $Projects = $data['Projects'];
                 // 生成更多项目项的 HTML 代码
                 foreach ($Projects as $item) {
+                    // 检查是否有链接
+                    if (!empty($item["url"])) {
+                        echo '<a class="projectItem" target="_blank" href="' . $item["url"] . '">
+            <!-- 项目项开始 -->
+            <div class="projectItemLeft">
+                <h2>' . $item["title"] . '</h2>
+                <p>' . $item["description"] . '</p>
+            </div>
+            <div class="projectItemRight">
+                <img src="' . $item["image"] . '" alt="项目图标">
+            </div>
+            <!-- 项目项结束 -->
+        </a>';
+                    } else {
+                        echo '<a class="projectItem" href="javascript:void(0);" onclick="showNeumorphicAlert(\'开发者未添加跳转链接\');">
+            <!-- 项目项开始 -->
+            <div class="projectItemLeft">
+                <h2>' . $item["title"] . '</h2>
+                <p>' . $item["description"] . '</p>
+            </div>
+            <div class="projectItemRight">
+                <img src="' . $item["image"] . '" alt="项目图标">
+            </div>
+            <!-- 项目项结束 -->
+        </a>';
+                    }
+                }
+                ?>
+            </div>
+
+            <!--标题图标文字-->
+            <div class="title"><img src="images/icon/github.svg" alt="ContribProjects Icon" width="22" height="22">
+                <span class="ContribProjects-description" ondblclick='toggleTranslation("ContribProjects")'>Contrib</span>
+                <span class="translated-ContribProjects-description ContribProjects-description Title_Hidden" ondblclick='toggleTranslation("ContribProjects")'>贡献项目</span></div>
+            <!-- 贡献项目列表开始 -->
+            <div class="projectList">
+                <?php
+                $ContribProjects = $data['ContribProjects'];
+                // 生成更多项目项的 HTML 代码
+                foreach ($ContribProjects as $item) {
                     // 检查是否有链接
                     if (!empty($item["url"])) {
                         echo '<a class="projectItem" target="_blank" href="' . $item["url"] . '">
