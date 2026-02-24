@@ -8,11 +8,6 @@
     <link rel="icon" href="images/ksmlc.ico">
     <meta name="description" content="Hello, I'm ksmlc, A full-stack developer who loves Python development, writing down my passion in the form of code!">
     <meta name="keywords" content="ksmlc, KS-MLC, 个人主页, 全栈开发者, Python开发">
-    <!-- QQ专属分享元标签（优先被QQ解析） -->
-    <meta name="qzone:title" content="Hi, I'm ksmlc | Python全栈开发者">
-    <meta name="qzone:description" content="ksmlc，一名热爱Python的全栈开发者，以代码书写我所热爱！">
-    <meta name="qzone:image" content="https://ksmlc.cn/images/ksmlc.jpg">
-    <meta name="qzone:type" content="website">
     <!-- Open Graph 元数据（通用社交分享，QQ也会兼容） -->
     <meta property="og:title" content="ksmlc | Full-Stack Developer">
     <meta property="og:type" content="website">
@@ -599,7 +594,7 @@
             <!-- 项目项开始 -->
             <div class="projectItemLeft">
                 <h2>' . $item["title"] . '</h2>
-                <p>' . $item["description"] . '</p>
+                <p class="contrib-desc">' . $item["description"] . '</p>
             </div>
             <div class="projectItemRight">
                 <img src="' . $item["image"] . '" alt="项目图标">
@@ -611,7 +606,7 @@
             <!-- 项目项开始 -->
             <div class="projectItemLeft">
                 <h2>' . $item["title"] . '</h2>
-                <p>' . $item["description"] . '</p>
+                <p class="contrib-desc">' . $item["description"] . '</p>
             </div>
             <div class="projectItemRight">
                 <img src="' . $item["image"] . '" alt="项目图标">

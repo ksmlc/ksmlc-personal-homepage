@@ -89,8 +89,13 @@
     {
       "url": "https://github.com/HoshinoSuzumi/chronoframe",
       "title": "Chronoframe",
-      "description": "相册画廊",
-      "image": "./images/icon/github.svg"
+      "description": "自托管个人图库项目，支持在线照片管理、EXIF 解析、地理位置与地图展示",
+      "image": "./images/icon/chronoframe.ico"
+    },{
+      "url": "https://github.com/timeshiftsauce/CeruMusic",
+      "title": "CeruMusic",
+      "description": "基于Electron+Vue的跨平台音乐播放器，提供插件框架，不含音乐源",
+      "image": "./images/icon/CeruMusic.svg"
     }
   ],
   "friend": [

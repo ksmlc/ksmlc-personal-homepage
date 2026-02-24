@@ -988,6 +988,11 @@ body.blue-theme #songs-list li:hover::after {
         position: relative
 }
 
+.projectItemLeft p.contrib-desc {
+        font-size: 12px;
+        opacity: .75
+}
+
 .projectItemLeft p::before {
         transition: transform .3s ease
 }
@@ -1259,6 +1264,10 @@ body.blue-theme .floating-lyrics-content {
 
         .projectItemLeft p {
                 font-size: 14px
+        }
+
+        .projectItemLeft p.contrib-desc {
+                font-size: 11px
         }
 
         .projectItemLeft h2 {
@@ -1625,6 +1634,10 @@ body.blue-theme .floating-lyrics-content {
 
         .projectItemLeft p {
                 font-size: 14px;
+        }
+
+        .projectItemLeft p.contrib-desc {
+                font-size: 12px;
         }
 
         .textBackground {
